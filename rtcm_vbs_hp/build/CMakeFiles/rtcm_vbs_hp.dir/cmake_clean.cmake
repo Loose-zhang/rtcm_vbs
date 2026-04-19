@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rtcm_vbs_hp.dir/tcp_io.c.o.d"
   "CMakeFiles/rtcm_vbs_hp.dir/vbs_core.c.o"
   "CMakeFiles/rtcm_vbs_hp.dir/vbs_core.c.o.d"
+  "CMakeFiles/rtcm_vbs_hp.dir/vbs_merge.c.o"
+  "CMakeFiles/rtcm_vbs_hp.dir/vbs_merge.c.o.d"
   "rtcm_vbs_hp"
   "rtcm_vbs_hp.pdb"
 )

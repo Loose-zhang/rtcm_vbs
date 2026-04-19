@@ -958,6 +958,30 @@ vbs_core.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtcm_vbs_hp.dir/build.make CMakeFiles/rtcm_vbs_hp.dir/vbs_core.c.s
 .PHONY : vbs_core.c.s
 
+vbs_merge.o: vbs_merge.c.o
+.PHONY : vbs_merge.o
+
+# target to build an object file
+vbs_merge.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtcm_vbs_hp.dir/build.make CMakeFiles/rtcm_vbs_hp.dir/vbs_merge.c.o
+.PHONY : vbs_merge.c.o
+
+vbs_merge.i: vbs_merge.c.i
+.PHONY : vbs_merge.i
+
+# target to preprocess a source file
+vbs_merge.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtcm_vbs_hp.dir/build.make CMakeFiles/rtcm_vbs_hp.dir/vbs_merge.c.i
+.PHONY : vbs_merge.c.i
+
+vbs_merge.s: vbs_merge.c.s
+.PHONY : vbs_merge.s
+
+# target to generate assembly for a file
+vbs_merge.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtcm_vbs_hp.dir/build.make CMakeFiles/rtcm_vbs_hp.dir/vbs_merge.c.s
+.PHONY : vbs_merge.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1070,6 +1094,9 @@ help:
 	@echo "... vbs_core.o"
 	@echo "... vbs_core.i"
 	@echo "... vbs_core.s"
+	@echo "... vbs_merge.o"
+	@echo "... vbs_merge.i"
+	@echo "... vbs_merge.s"
 .PHONY : help
 
 

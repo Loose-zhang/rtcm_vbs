@@ -77,6 +77,7 @@ endif()
 add_executable(rtcm_vbs_hp
     main.c
     vbs_core.c
+    vbs_merge.c
     tcp_io.c
     rtklib_glue.c
 )

@@ -1,5 +1,7 @@
-CMakeFiles/rtcm_vbs_hp.dir/main.c.o: \
-  /Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/main.c \
+CMakeFiles/rtcm_vbs_hp.dir/vbs_merge.c.o: \
+  /Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/vbs_merge.c \
+  /Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/vbs_merge.h \
+  /Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/../include/rtklib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h \
@@ -85,6 +87,13 @@ CMakeFiles/rtcm_vbs_hp.dir/main.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_dev_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_mode_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/stdarg.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stdarg_header_macro.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stdarg___gnuc_va_list.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stdarg_va_list.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stdarg_va_arg.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stdarg___va_copy.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stdarg_va_copy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rsize_t.h \
@@ -98,16 +107,6 @@ CMakeFiles/rtcm_vbs_hp.dir/main.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_clock_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_time_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timespec.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_t.h \
-  /Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/../include/rtklib.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/stdarg.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stdarg_header_macro.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stdarg___gnuc_va_list.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stdarg_va_list.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stdarg_va_arg.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stdarg___va_copy.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stdarg_va_copy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h \
@@ -123,6 +122,7 @@ CMakeFiles/rtcm_vbs_hp.dir/main.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_once_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/pthread/qos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/qos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_mach_port_t.h \
@@ -135,17 +135,4 @@ CMakeFiles/rtcm_vbs_hp.dir/main.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_isset.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_zero.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_copy.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_select.h \
-  /Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/vbs_core.h \
-  /Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/vbs_merge.h \
-  /Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/tcp_io.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/stddef.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_header_macro.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_ptrdiff_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_size_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_rsize_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_wchar_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_null.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_max_align_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_offsetof.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_select.h
