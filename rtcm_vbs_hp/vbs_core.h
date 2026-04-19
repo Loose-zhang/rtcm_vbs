@@ -3,7 +3,7 @@
  *
  * Depends on RTKLIB (include/rtklib.h).
  *
- * The VBS correction replaces the reference station's observations with those
+ * The VBS correction replaces a reference station's observations with those
  * that *would have been* measured at a different (virtual) location, by using
  * the geometric range difference between the real base and the virtual base
  * for every satellite in view.
@@ -22,8 +22,13 @@
  * correction, removing the ~30 m systematic bias present in the old Python
  * implementation.
  *
- * Optionally a differential troposphere correction (Saastamoinen) can be
- * applied when the VBS vertical offset is significant.
+ * Dual-base correctness:
+ *   The context can hold TWO real-base positions (A and B). In single-base
+ *   mode only index 0 (A) is used. In dual-base mode each satellite's
+ *   observation is corrected from whichever of A or B actually measured it
+ *   (the merger tags this per satellite). This eliminates the error that
+ *   arises when |r_base_A - r_base_B| is large (km scale) and a sat's obs
+ *   is from B but gets corrected as if it came from A.
  *----------------------------------------------------------------------------*/
 #ifndef VBS_CORE_H
 #define VBS_CORE_H
@@ -34,19 +39,22 @@
 extern "C" {
 #endif
 
+#define VBS_MAX_BASES 2  /* 0 = A, 1 = B */
+
 typedef struct {
-    double base_ecef[3];       /* real base station ECEF (m), updated from 1005/1006 */
-    int    base_valid;         /* true when base_ecef has been set */
-    double vbs_ecef[3];        /* virtual base station target ECEF (m) */
+    double base_ecef[VBS_MAX_BASES][3];  /* real base ECEF(s) in metres */
+    int    base_valid[VBS_MAX_BASES];    /* per-base learned flag */
 
-    /* Offset mode: if use_llh_offset != 0, vbs_ecef is derived each time the
-       real-base ECEF is (re)learned by applying (dn,de,du) in the local
-       geodetic frame of the real base. Otherwise vbs_ecef is fixed. */
+    double vbs_ecef[3];                  /* virtual base target ECEF (m) */
+
+    /* Offset mode: if use_llh_offset != 0, vbs_ecef is derived from the
+       *A* base's first learned position. Otherwise vbs_ecef is an absolute
+       coordinate set at init time. */
     int    use_llh_offset;
-    double dn, de, du;         /* North/East/Up offset (m) */
+    double dn, de, du;                   /* North/East/Up offset (m) */
 
-    int    apply_trop;         /* 1: differential Saastamoinen troposphere */
-    double humi;               /* relative humidity 0..1 for Saastamoinen */
+    int    apply_trop;
+    double humi;                         /* relative humidity 0..1 */
 
     /* Statistics */
     long   n_obs_in, n_obs_out;
@@ -54,28 +62,36 @@ typedef struct {
     long   n_frames_1005_6, n_frames_msm;
 } vbs_ctx_t;
 
-/* Initialize context. If use_llh_offset=1, (dn,de,du) are used to derive the
- * VBS from the *first* learned base position. If use_llh_offset=0, vbs_llh
- * is used as the absolute VBS coordinate (lat deg, lon deg, h m). */
+/* ---- lifecycle ---- */
 void vbs_init(vbs_ctx_t *ctx,
               int use_llh_offset,
               double dn, double de, double du,
-              const double *vbs_llh /* may be NULL if use_llh_offset=1 */,
+              const double *vbs_llh /* NULL if offset mode */,
               int apply_trop);
 
-/* Called after input_rtcm3 returns 5 (station params). Updates base_ecef and,
- * if offset mode is active and VBS not yet resolved, computes vbs_ecef. */
-void vbs_update_base_from_sta(vbs_ctx_t *ctx, const sta_t *sta);
+/* Update base[side] from a just-decoded sta_t (1005/1006 payload).
+ * side = 0 (A) or 1 (B). Returns 1 if the base ecef changed. Side 0 also
+ * drives VBS recomputation in offset mode. */
+int  vbs_update_base(vbs_ctx_t *ctx, int side, const sta_t *sta);
 
-/* Rewrite sta->pos in the rtcm struct to the VBS coordinate so subsequent
- * gen_rtcm3(1005/1006) encodes the virtual position. */
+/* Rewrite rtcm->sta.pos to the VBS coordinate so a subsequent
+ * gen_rtcm3(1005/1006) encodes the virtual ARP. */
 void vbs_rewrite_station(vbs_ctx_t *ctx, rtcm_t *rtcm);
 
 /* Apply VBS correction to rtcm->obs in-place.
- * Returns number of satellites successfully corrected. Satellites without
- * usable ephemeris are removed from rtcm->obs so downstream encoding only
- * contains geometrically-consistent measurements. */
-int  vbs_correct_obs(vbs_ctx_t *ctx, rtcm_t *rtcm);
+ *
+ *   side_per_obs:
+ *     NULL        -> all obs use base 0 (A).  Single-base path.
+ *     non-NULL    -> array of length rtcm->obs.n; each element is 0 or 1
+ *                    indicating which real base produced that obsd_t.
+ *
+ * Satellites without usable ephemeris, or whose tagged base has not yet
+ * been learned, are dropped from rtcm->obs so downstream encoding only
+ * contains geometrically consistent measurements.
+ *
+ * Returns the number of satellites successfully corrected. */
+int  vbs_correct_obs(vbs_ctx_t *ctx, rtcm_t *rtcm,
+                     const unsigned char *side_per_obs);
 
 #ifdef __cplusplus
 }

@@ -4,7 +4,6 @@
 #include "vbs_merge.h"
 #include <string.h>
 #include <math.h>
-#include <stdio.h>
 
 void merger_init(merger_t *m, int window_ms)
 {
@@ -24,7 +23,7 @@ void merger_stash(merger_t *m, int side,
     buf->ms_recv = now_ms;
 }
 
-/* average SNR (0.001 dBHz units) across all non-empty signals of obsd_t. */
+/* average SNR (0.001 dBHz units) across all non-empty signals of an obsd_t */
 static double avg_snr(const obsd_t *o)
 {
     double sum = 0.0;
@@ -35,14 +34,23 @@ static double avg_snr(const obsd_t *o)
     return cnt > 0 ? sum / cnt : -1.0;
 }
 
-/* merge two epochs. caller guarantees a/b valid. */
-static int do_merge(const epoch_buf_t *a, const epoch_buf_t *b,
-                    obsd_t *out, int *n_both)
+static int fill_single(const epoch_buf_t *src, int side,
+                       obsd_t *out, unsigned char *out_side)
+{
+    int n = src->n > MAXOBS ? MAXOBS : src->n;
+    memcpy(out, src->data, n * sizeof(obsd_t));
+    memset(out_side, (unsigned char)side, n);
+    return n;
+}
+
+/* Merge two epochs; populate out[] + out_side[] and return length. */
+static int do_merge(merger_t *m,
+                    const epoch_buf_t *a, const epoch_buf_t *b,
+                    obsd_t *out, unsigned char *out_side)
 {
     int out_n = 0;
-    int used_b[MAXOBS] = {0};
+    unsigned char used_b[MAXOBS] = {0};
 
-    /* iterate A: either keep A, or replace with B if B has same sat & higher SNR */
     for (int i = 0; i < a->n && out_n < MAXOBS; i++) {
         int sat = a->data[i].sat;
         int bi  = -1;
@@ -50,49 +58,61 @@ static int do_merge(const epoch_buf_t *a, const epoch_buf_t *b,
             if (b->data[j].sat == sat) { bi = j; break; }
         }
         if (bi < 0) {
-            out[out_n++] = a->data[i];
+            out[out_n]      = a->data[i];
+            out_side[out_n] = 0;
+            out_n++;
             continue;
         }
         used_b[bi] = 1;
-        (*n_both)++;
+        m->n_both++;
         double sa = avg_snr(&a->data[i]);
         double sb = avg_snr(&b->data[bi]);
-        out[out_n++] = (sb > sa) ? b->data[bi] : a->data[i];
+        if (sb > sa) {
+            out[out_n]      = b->data[bi];
+            out_side[out_n] = 1;
+            m->n_chose_b++;
+        } else {
+            out[out_n]      = a->data[i];
+            out_side[out_n] = 0;
+            m->n_chose_a++;
+        }
+        out_n++;
     }
-    /* append satellites that appear only in B */
     for (int j = 0; j < b->n && out_n < MAXOBS; j++) {
-        if (!used_b[j]) out[out_n++] = b->data[j];
+        if (!used_b[j]) {
+            out[out_n]      = b->data[j];
+            out_side[out_n] = 1;
+            out_n++;
+        }
     }
     return out_n;
 }
 
 int merger_poll(merger_t *m, long now_ms,
-                obsd_t *out_obs, int *out_n, gtime_t *out_time)
+                obsd_t *out_obs, unsigned char *out_side,
+                int *out_n, gtime_t *out_time)
 {
-    /* Case 1: both sides have the same epoch (≤ 1 ms diff) → merge immediately */
+    /* Case 1: both sides have observations at (approximately) the same
+       epoch → merge immediately. */
     if (m->a.valid && m->b.valid) {
         double dt = fabs(timediff(m->a.time, m->b.time));
         if (dt <= 0.010) {
-            int nb = 0;
-            *out_n    = do_merge(&m->a, &m->b, out_obs, &nb);
+            *out_n    = do_merge(m, &m->a, &m->b, out_obs, out_side);
             *out_time = m->a.time;
-            m->n_both   += nb;
-            m->n_merged += 1;
+            m->n_merged++;
             m->a.valid = m->b.valid = 0;
             return 1;
         }
-        /* different epochs: flush the older one right away */
+        /* Different epochs: flush the older one unmerged so we don't lose
+           it and so the newer stays pending for its twin. */
         if (timediff(m->a.time, m->b.time) < 0) {
-            /* a is older → emit A */
-            memcpy(out_obs, m->a.data, m->a.n * sizeof(obsd_t));
-            *out_n    = m->a.n;
+            *out_n    = fill_single(&m->a, 0, out_obs, out_side);
             *out_time = m->a.time;
             m->n_a_only++;
             m->a.valid = 0;
             return 1;
         } else {
-            memcpy(out_obs, m->b.data, m->b.n * sizeof(obsd_t));
-            *out_n    = m->b.n;
+            *out_n    = fill_single(&m->b, 1, out_obs, out_side);
             *out_time = m->b.time;
             m->n_b_only++;
             m->b.valid = 0;
@@ -100,18 +120,16 @@ int merger_poll(merger_t *m, long now_ms,
         }
     }
 
-    /* Case 2: only one side valid → wait window_ms then emit that side alone */
+    /* Case 2: only one side valid and its wait window has elapsed. */
     if (m->a.valid && !m->b.valid && now_ms - m->a.ms_recv >= m->window_ms) {
-        memcpy(out_obs, m->a.data, m->a.n * sizeof(obsd_t));
-        *out_n    = m->a.n;
+        *out_n    = fill_single(&m->a, 0, out_obs, out_side);
         *out_time = m->a.time;
         m->n_a_only++;
         m->a.valid = 0;
         return 1;
     }
     if (m->b.valid && !m->a.valid && now_ms - m->b.ms_recv >= m->window_ms) {
-        memcpy(out_obs, m->b.data, m->b.n * sizeof(obsd_t));
-        *out_n    = m->b.n;
+        *out_n    = fill_single(&m->b, 1, out_obs, out_side);
         *out_time = m->b.time;
         m->n_b_only++;
         m->b.valid = 0;

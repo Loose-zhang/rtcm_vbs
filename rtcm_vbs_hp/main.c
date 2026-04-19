@@ -353,13 +353,14 @@ static void run(const config_t *cfg)
                                      ch->rtcm.obs.n, ch->rtcm.time,
                                      now_ms_mono());
                     } else if (ch == &chA) {
-                        /* single-base: correct + emit immediately */
+                        /* single-base: correct + emit immediately; all obs
+                           come from base A so side array is NULL/implicit. */
                         int n = ch->rtcm.obs.n;
                         if (n > MAXOBS) n = MAXOBS;
                         memcpy(rout.obs.data, ch->rtcm.obs.data,
                                n * sizeof(obsd_t));
                         rout.obs.n = n;
-                        vbs_correct_obs(&vbs, &rout);
+                        vbs_correct_obs(&vbs, &rout, NULL);
                         if (rout.obs.n > 0) emit_msm(&rout, srv, subtype);
                     }
                     /* eph/ssr channels typically don't carry obs; ignore */
@@ -371,11 +372,21 @@ static void run(const config_t *cfg)
                     }
                 }
                 else if (ret == 5) {
-                    /* Only let chA (or chB in dual if chA not seen) define the
-                       VBS-anchor. We pick chA exclusively for simplicity. */
+                    /* Learn whichever real base this channel represents.
+                       In dual-base mode BOTH bases need to be known so
+                       per-sat correction can pick the right one.
+                       The outgoing 1005/1006 frame always carries the VBS
+                       coordinate (from channel A's frame to preserve the
+                       original staid / antenna info). */
+                    int side = -1;
+                    if (ch == &chA) side = 0;
+                    else if (cfg->dual && ch == &chB) side = 1;
+
+                    if (side >= 0) {
+                        vbs_update_base(&vbs, side, &ch->rtcm.sta);
+                    }
                     if (ch == &chA) {
                         rout.sta = ch->rtcm.sta;
-                        vbs_update_base_from_sta(&vbs, &ch->rtcm.sta);
                         vbs_rewrite_station(&vbs, &rout);
                         emit_station(&rout, srv);
                     }
@@ -387,13 +398,15 @@ static void run(const config_t *cfg)
         /* ---- dual-base: poll merger & emit if ready ---- */
         if (cfg->dual) {
             obsd_t merged[MAXOBS];
+            unsigned char side_arr[MAXOBS];
             int    nm = 0;
             gtime_t mt;
-            if (merger_poll(&mrg, now_ms_mono(), merged, &nm, &mt) && nm > 0) {
+            if (merger_poll(&mrg, now_ms_mono(),
+                            merged, side_arr, &nm, &mt) && nm > 0) {
                 memcpy(rout.obs.data, merged, nm * sizeof(obsd_t));
                 rout.obs.n = nm;
                 rout.time  = mt;
-                vbs_correct_obs(&vbs, &rout);
+                vbs_correct_obs(&vbs, &rout, side_arr);
                 if (rout.obs.n > 0) emit_msm(&rout, srv, subtype);
             }
         }
@@ -410,12 +423,14 @@ static void run(const config_t *cfg)
             if (cfg->dual) {
                 fprintf(stderr,
                     "[stat] 1005/6=%ld MSM=%ld | obs in=%ld out=%ld | "
-                    "sat corr=%ld no_eph=%ld | merge A=%ld B=%ld both_sat=%ld "
-                    "epochs=%ld | SSR fwd=%ld | clients=%d\n",
+                    "sat corr=%ld no_eph=%ld | epochs merged=%ld A-only=%ld "
+                    "B-only=%ld | CNR both_sat=%ld chose_A=%ld chose_B=%ld "
+                    "| SSR fwd=%ld | clients=%d\n",
                     vbs.n_frames_1005_6, vbs.n_frames_msm,
                     vbs.n_obs_in, vbs.n_obs_out,
                     vbs.n_sat_corrected, vbs.n_sat_no_eph,
-                    mrg.n_a_only, mrg.n_b_only, mrg.n_both, mrg.n_merged,
+                    mrg.n_merged, mrg.n_a_only, mrg.n_b_only,
+                    mrg.n_both, mrg.n_chose_a, mrg.n_chose_b,
                     ssr_fwd, tcps_num_clients(srv));
             } else {
                 fprintf(stderr,
