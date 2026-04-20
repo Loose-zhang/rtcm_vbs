@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{789F8D8B-F94E-3A4F-89D0-D95F16B36D00}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>rtklib_min</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rtklib_min.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rtklib_min</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rtklib_min.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rtklib_min</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">rtklib_min.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">rtklib_min</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">rtklib_min.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">rtklib_min</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ENAGLO;ENAGAL;ENACMP;ENAQZS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ENAGLO;ENAGAL;ENACMP;ENAQZS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENAGLO;ENAGAL;ENACMP;ENAQZS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENAGLO;ENAGAL;ENACMP;ENAQZS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENAGLO;ENAGAL;ENACMP;ENAQZS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENAGLO;ENAGAL;ENACMP;ENAQZS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENAGLO;ENAGAL;ENACMP;ENAQZS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENAGLO;ENAGAL;ENACMP;ENAQZS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HE:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp -BE:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build-win --check-stamp-file E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build-win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/CMakeLists.txt;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\CMakeLists.txt;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\3.12.18081601-MSVC_2\CMakeCCompiler.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\3.12.18081601-MSVC_2\CMakeRCCompiler.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\3.12.18081601-MSVC_2\CMakeSystem.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HE:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp -BE:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build-win --check-stamp-file E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build-win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/CMakeLists.txt;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\CMakeLists.txt;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\3.12.18081601-MSVC_2\CMakeCCompiler.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\3.12.18081601-MSVC_2\CMakeRCCompiler.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\3.12.18081601-MSVC_2\CMakeSystem.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HE:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp -BE:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build-win --check-stamp-file E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build-win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/CMakeLists.txt;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\CMakeLists.txt;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\3.12.18081601-MSVC_2\CMakeCCompiler.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\3.12.18081601-MSVC_2\CMakeRCCompiler.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\3.12.18081601-MSVC_2\CMakeSystem.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HE:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp -BE:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build-win --check-stamp-file E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build-win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/CMakeLists.txt;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;E:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\CMakeLists.txt;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\3.12.18081601-MSVC_2\CMakeCCompiler.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\3.12.18081601-MSVC_2\CMakeRCCompiler.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\3.12.18081601-MSVC_2\CMakeSystem.cmake;E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c" />
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build-win\ZERO_CHECK.vcxproj">
+      <Project>{9A914368-169C-3441-8EDF-C1BA7A7AF196}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

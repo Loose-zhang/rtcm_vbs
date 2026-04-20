@@ -116,7 +116,11 @@ static int eph_msg_for_sys(int sys)
     }
 }
 
-/* Emit one or more MSM frames per constellation from rtcm_out->obs. */
+/* Emit one or more MSM frames per constellation from rtcm_out->obs.
+ * RTCM MSM sync: sync=1 means more MSM for this epoch follow; sync=0 ends
+ * the epoch. RTKLIB (RTKNAVI) only delivers obs to positioning on sync=0, and
+ * merges all prior sync=1 MSM into one epoch — so only the final frame of
+ * this emit may use sync=0 (not once per GNSS). */
 static void emit_msm(rtcm_t *out, tcp_server_t *srv, int subtype)
 {
     obsd_t *data = out->obs.data;
@@ -132,6 +136,32 @@ static void emit_msm(rtcm_t *out, tcp_server_t *srv, int subtype)
     };
     obsd_t sys_buf[MAXOBS];
 
+    int total = 0;
+    for (size_t k = 0; k < sizeof(systems)/sizeof(systems[0]); k++) {
+        int sys = systems[k];
+        int msg = msm_type_for_sys(sys, subtype);
+        if (!msg) continue;
+
+        int nsat = 0, nsig = 0, mask[MAXCODE] = {0};
+        for (int i = 0; i < master_n; i++) {
+            if (satsys(master[i].sat, NULL) != sys) continue;
+            for (int j = 0; j < NFREQ+NEXOBS; j++) {
+                int code = master[i].code[j];
+                if (!code || mask[code-1]) continue;
+                mask[code-1] = 1; nsig++;
+            }
+            nsat++;
+        }
+        if (nsat == 0 || nsig == 0) continue;
+        if (nsig > 64) continue;
+
+        int ns   = 64 / nsig;
+        int nmsg = (nsat - 1) / ns + 1;
+        total += nmsg;
+    }
+    if (total <= 0) return;
+
+    int sent = 0;
     for (size_t k = 0; k < sizeof(systems)/sizeof(systems[0]); k++) {
         int sys = systems[k];
         int msg = msm_type_for_sys(sys, subtype);
@@ -161,11 +191,12 @@ static void emit_msm(rtcm_t *out, tcp_server_t *srv, int subtype)
                 memmove(sys_buf, sys_buf + offset, chunk * sizeof(obsd_t));
             }
             out->obs.n = chunk;
-            int sync = (m < nmsg - 1) ? 1 : 0;
+            int sync = (sent < total - 1) ? 1 : 0;
             if (gen_rtcm3(out, msg, 0, sync)) {
                 tcps_broadcast(srv, out->buff, out->nbyte);
             }
             offset += chunk;
+            sent++;
         }
         out->obs.data = data;
         out->obs.n    = nobs;
@@ -195,9 +226,13 @@ static void emit_station(rtcm_t *out, tcp_server_t *srv)
 /* ---- monotonic milliseconds --------------------------------------------- */
 static long now_ms_mono(void)
 {
+#ifdef _WIN32
+    return (long)GetTickCount64();
+#else
     struct timespec ts;
     clock_gettime(CLOCK_MONOTONIC, &ts);
     return (long)ts.tv_sec * 1000 + ts.tv_nsec / 1000000;
+#endif
 }
 
 /* ---- per-channel RTCM state + input processing -------------------------- */
@@ -413,8 +448,12 @@ static void run(const config_t *cfg)
 
         /* brief sleep if nothing happened, to avoid busy-spin */
         if (!any_data) {
+#ifdef _WIN32
+            Sleep(5);
+#else
             struct timespec ts = { 0, 5*1000*1000 };  /* 5 ms */
             nanosleep(&ts, NULL);
+#endif
         }
 
         /* ---- periodic stats ---- */

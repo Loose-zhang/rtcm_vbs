@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F1290868-3B4B-3BD5-BD2A-C4149856BA9D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

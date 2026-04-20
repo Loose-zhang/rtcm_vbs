@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\vbs_core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\vbs_merge.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\tcp_io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\rtklib_glue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F1290868-3B4B-3BD5-BD2A-C4149856BA9D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

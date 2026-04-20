@@ -9,11 +9,16 @@
 #ifdef _WIN32
   #include <winsock2.h>
   #include <ws2tcpip.h>
+  #include <windows.h>
   #pragma comment(lib, "ws2_32.lib")
   typedef int socklen_t;
   #define SOCK_ERR(x) ((x) == SOCKET_ERROR)
   #define close_sock closesocket
   #define SET_NONBLOCK(fd) do { u_long m=1; ioctlsocket((fd), FIONBIO, &m); } while(0)
+  #define MTX_INIT(m)    InitializeCriticalSection(m)
+  #define MTX_DESTROY(m) DeleteCriticalSection(m)
+  #define MTX_LOCK(m)    EnterCriticalSection(m)
+  #define MTX_UNLOCK(m)  LeaveCriticalSection(m)
 #else
   #include <sys/types.h>
   #include <sys/socket.h>
@@ -26,6 +31,10 @@
   #define SOCK_ERR(x) ((x) < 0)
   #define close_sock close
   #define SET_NONBLOCK(fd) fcntl((fd), F_SETFL, fcntl((fd), F_GETFL, 0) | O_NONBLOCK)
+  #define MTX_INIT(m)    pthread_mutex_init(m, NULL)
+  #define MTX_DESTROY(m) pthread_mutex_destroy(m)
+  #define MTX_LOCK(m)    pthread_mutex_lock(m)
+  #define MTX_UNLOCK(m)  pthread_mutex_unlock(m)
 #endif
 
 static void tcp_init(void)
@@ -80,7 +89,9 @@ void tcpc_close(tcp_client_t *c)
 }
 
 /* ---- server -------------------------------------------------------------- */
+#ifndef _WIN32
 #include <pthread.h>
+#endif
 
 struct tcp_server_s {
     int listen_fd;
@@ -88,12 +99,21 @@ struct tcp_server_s {
     int max_clients;
     int *clients;
     int  n_clients;
+#ifdef _WIN32
+    CRITICAL_SECTION mtx;
+    HANDLE           accept_thr;
+#else
     pthread_mutex_t mtx;
     pthread_t       accept_thr;
+#endif
     volatile int    running;
 };
 
+#ifdef _WIN32
+static DWORD WINAPI accept_thread_win(void *arg)
+#else
 static void *accept_thread(void *arg)
+#endif
 {
     tcp_server_t *s = (tcp_server_t*)arg;
     while (s->running) {
@@ -110,7 +130,7 @@ static void *accept_thread(void *arg)
         setsockopt(fd, IPPROTO_TCP, TCP_NODELAY, (const char*)&one, sizeof(one));
         SET_NONBLOCK(fd);
 
-        pthread_mutex_lock(&s->mtx);
+        MTX_LOCK(&s->mtx);
         if (s->n_clients < s->max_clients) {
             s->clients[s->n_clients++] = fd;
             char ip[64]; inet_ntop(AF_INET, &cli.sin_addr, ip, sizeof(ip));
@@ -119,9 +139,13 @@ static void *accept_thread(void *arg)
         } else {
             close_sock(fd);
         }
-        pthread_mutex_unlock(&s->mtx);
+        MTX_UNLOCK(&s->mtx);
     }
+#ifdef _WIN32
+    return 0;
+#else
     return NULL;
+#endif
 }
 
 tcp_server_t *tcps_create(int port, int max_clients)
@@ -132,7 +156,7 @@ tcp_server_t *tcps_create(int port, int max_clients)
     s->max_clients = max_clients > 0 ? max_clients : 8;
     s->clients = (int*)calloc(s->max_clients, sizeof(int));
     s->port    = port;
-    pthread_mutex_init(&s->mtx, NULL);
+    MTX_INIT(&s->mtx);
 
     int fd = (int)socket(AF_INET, SOCK_STREAM, 0);
     if (fd < 0) { free(s->clients); free(s); return NULL; }
@@ -151,7 +175,18 @@ tcp_server_t *tcps_create(int port, int max_clients)
     }
     s->listen_fd = fd;
     s->running   = 1;
-    pthread_create(&s->accept_thr, NULL, accept_thread, s);
+#ifdef _WIN32
+    s->accept_thr = CreateThread(NULL, 0, accept_thread_win, s, 0, NULL);
+    if (!s->accept_thr) {
+        close_sock(fd); MTX_DESTROY(&s->mtx); free(s->clients); free(s);
+        return NULL;
+    }
+#else
+    if (pthread_create(&s->accept_thr, NULL, accept_thread, s) != 0) {
+        close_sock(fd); MTX_DESTROY(&s->mtx); free(s->clients); free(s);
+        return NULL;
+    }
+#endif
     fprintf(stderr, "[tcp] VBS output listening on 0.0.0.0:%d\n", port);
     return s;
 }
@@ -161,11 +196,16 @@ void tcps_destroy(tcp_server_t *s)
     if (!s) return;
     s->running = 0;
     close_sock(s->listen_fd);
+#ifdef _WIN32
+    WaitForSingleObject(s->accept_thr, INFINITE);
+    CloseHandle(s->accept_thr);
+#else
     pthread_join(s->accept_thr, NULL);
-    pthread_mutex_lock(&s->mtx);
+#endif
+    MTX_LOCK(&s->mtx);
     for (int i = 0; i < s->n_clients; i++) close_sock(s->clients[i]);
-    pthread_mutex_unlock(&s->mtx);
-    pthread_mutex_destroy(&s->mtx);
+    MTX_UNLOCK(&s->mtx);
+    MTX_DESTROY(&s->mtx);
     free(s->clients);
     free(s);
 }
@@ -173,7 +213,7 @@ void tcps_destroy(tcp_server_t *s)
 void tcps_broadcast(tcp_server_t *s, const void *buf, size_t n)
 {
     if (!s || n == 0) return;
-    pthread_mutex_lock(&s->mtx);
+    MTX_LOCK(&s->mtx);
     int w = 0;
     for (int i = 0; i < s->n_clients; i++) {
         int r = (int)send(s->clients[i], (const char*)buf, (int)n,
@@ -190,14 +230,14 @@ void tcps_broadcast(tcp_server_t *s, const void *buf, size_t n)
         s->clients[w++] = s->clients[i];
     }
     s->n_clients = w;
-    pthread_mutex_unlock(&s->mtx);
+    MTX_UNLOCK(&s->mtx);
 }
 
 int tcps_num_clients(tcp_server_t *s)
 {
     if (!s) return 0;
-    pthread_mutex_lock(&s->mtx);
+    MTX_LOCK(&s->mtx);
     int n = s->n_clients;
-    pthread_mutex_unlock(&s->mtx);
+    MTX_UNLOCK(&s->mtx);
     return n;
 }

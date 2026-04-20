@@ -83,3 +83,9 @@ add_executable(rtcm_vbs_hp
 )
 
 target_link_libraries(rtcm_vbs_hp PRIVATE rtklib_min)
+
+# run() holds several channel_t, each with a full rtcm_t (nav_t is huge). The
+# default 1 MB stack on Windows MSVC is too small and the process exits instantly.
+if(MSVC)
+    set_target_properties(rtcm_vbs_hp PROPERTIES LINK_FLAGS "/STACK:8388608")
+endif()
