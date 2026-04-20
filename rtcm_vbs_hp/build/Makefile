@@ -886,6 +886,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtcm_vbs_hp.dir/build.make CMakeFiles/rtcm_vbs_hp.dir/main.c.s
 .PHONY : main.c.s
 
+net_interp.o: net_interp.c.o
+.PHONY : net_interp.o
+
+# target to build an object file
+net_interp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtcm_vbs_hp.dir/build.make CMakeFiles/rtcm_vbs_hp.dir/net_interp.c.o
+.PHONY : net_interp.c.o
+
+net_interp.i: net_interp.c.i
+.PHONY : net_interp.i
+
+# target to preprocess a source file
+net_interp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtcm_vbs_hp.dir/build.make CMakeFiles/rtcm_vbs_hp.dir/net_interp.c.i
+.PHONY : net_interp.c.i
+
+net_interp.s: net_interp.c.s
+.PHONY : net_interp.s
+
+# target to generate assembly for a file
+net_interp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtcm_vbs_hp.dir/build.make CMakeFiles/rtcm_vbs_hp.dir/net_interp.c.s
+.PHONY : net_interp.c.s
+
 rtklib_glue.o: rtklib_glue.c.o
 .PHONY : rtklib_glue.o
 
@@ -1085,6 +1109,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... net_interp.o"
+	@echo "... net_interp.i"
+	@echo "... net_interp.s"
 	@echo "... rtklib_glue.o"
 	@echo "... rtklib_glue.i"
 	@echo "... rtklib_glue.s"

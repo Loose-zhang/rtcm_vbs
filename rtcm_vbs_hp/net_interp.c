@@ -21,16 +21,30 @@ static double first_valid_p(const obsd_t *o)
     return 0.0;
 }
 
-static double baseline_fraction(const double *a, const double *b, const double *v)
+/* Fix 2: IDW weights based on 3-D distance from VBS to each base.
+ * wa + wb = 1.0; no extrapolation needed since IDW is naturally bounded. */
+static void idw_weights(const double *vbs_ecef,
+                        const double *a_ecef, const double *b_ecef,
+                        double *wa, double *wb)
 {
-    double ab[3], av[3];
-    for (int i = 0; i < 3; i++) {
-        ab[i] = b[i] - a[i];
-        av[i] = v[i] - a[i];
+    double da = 0.0, db = 0.0;
+    for (int k = 0; k < 3; k++) {
+        double ta = vbs_ecef[k] - a_ecef[k];
+        double tb = vbs_ecef[k] - b_ecef[k];
+        da += ta * ta;
+        db += tb * tb;
     }
-    double den = dot(ab, ab, 3);
-    if (den <= 1e-6) return 0.0;
-    return dot(av, ab, 3) / den;
+    da = sqrt(da);
+    db = sqrt(db);
+
+    if (da < 1.0) { *wa = 1.0; *wb = 0.0; return; }
+    if (db < 1.0) { *wa = 0.0; *wb = 1.0; return; }
+
+    double ra = 1.0 / da;
+    double rb = 1.0 / db;
+    double rs = ra + rb;
+    *wa = ra / rs;
+    *wb = rb / rs;
 }
 
 void net_interp_init(net_interp_t *ni, int enable)
@@ -54,10 +68,14 @@ int net_interp_build_dual(net_interp_t *ni,
     if (!vbs->base_valid[0] || !vbs->base_valid[1]) return 0;
     if (!obs_a || !obs_b || na <= 0 || nb <= 0) return 0;
 
-    double alpha = baseline_fraction(vbs->base_ecef[0], vbs->base_ecef[1],
-                                     vbs->vbs_ecef);
-    if (alpha < -1.0) alpha = -1.0;
-    if (alpha >  2.0) alpha =  2.0;
+    /* Fix 2: IDW weights replace the old 1-D baseline projection. */
+    double wa, wb;
+    idw_weights(vbs->vbs_ecef, vbs->base_ecef[0], vbs->base_ecef[1], &wa, &wb);
+
+    /* Pre-compute LLH and troposphere inputs for Fix 1 & Fix 3. */
+    double pos_a[3], pos_b[3];
+    ecef2pos(vbs->base_ecef[0], pos_a);
+    ecef2pos(vbs->base_ecef[1], pos_b);
 
     int n = na < nb ? na : nb;
     if (n > MAXOBS) n = MAXOBS;
@@ -104,12 +122,49 @@ int net_interp_build_dual(net_interp_t *ni,
         double dgeom = rho_b - rho_a;
         double dres  = (pb - pa) - dgeom;
 
+        /* Fix 1: when trop correction is also active, vbs_core already applies
+         * dtrop = trop(vbs) - trop(base) for each satellite. The dres computed
+         * above still contains the inter-base troposphere difference
+         * (trop_B - trop_A). Subtract it here so the residual passed to the
+         * interpolator is dominated by ionosphere only, preventing the trop
+         * component from being corrected twice. */
+        double azel_a[2] = {0.0, 0.0};
+        double azel_b[2] = {0.0, 0.0};
+        satazel(pos_a, ea, azel_a);
+        satazel(pos_b, eb, azel_b);
+        if (vbs->apply_trop) {
+            double ta = tropmodel(oa->time, pos_a, azel_a, vbs->humi);
+            double tb = tropmodel(ob->time, pos_b, azel_b, vbs->humi);
+            dres -= (tb - ta);
+        }
+
         if (!isfinite(dres) || fabs(dres) > ni->max_abs_corr_m) {
             ni->n_sat_reject++;
             continue;
         }
 
-        double corr = alpha * dres;
+        /* Fix 3: normalise dres to the zenith (VTEC) domain using the mean
+         * mapping function of the two bases, then re-apply the VBS-side mapping
+         * function. This removes the bias introduced when the two bases observe
+         * the same satellite at noticeably different elevations (worst case for
+         * low-elevation satellites on long baselines). VBS mapping function is
+         * approximated by the IDW-weighted average of the two bases. */
+        double mf_a = ionmapf(pos_a, azel_a);
+        double mf_b = ionmapf(pos_b, azel_b);
+        double mf_mean = 0.5 * (mf_a + mf_b);
+
+        double corr;
+        if (mf_mean > 1e-3 && mf_a > 1e-3 && mf_b > 1e-3 &&
+            mf_a < 5.0 && mf_b < 5.0) {
+            double dres_vtec = dres / mf_mean;
+            double mf_v = wa * mf_a + wb * mf_b;
+            corr = wb * dres_vtec * mf_v;
+        } else {
+            /* Fix 2 only (fallback for extreme geometry): IDW without
+             * ionosphere normalisation. */
+            corr = wb * dres;
+        }
+
         sat_extra_m[oa->sat - 1] = corr;
         ni->n_sat_pairs++;
         ni->n_sat_interp++;

@@ -6,5 +6,7 @@ C_DEFINES = -DENACMP -DENAGAL -DENAGLO -DENAQZS
 
 C_INCLUDES = -I/Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/../include
 
-C_FLAGS = -std=gnu11 -Wall -Wno-unused-parameter -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable
+C_FLAGSarm64 = -O3 -DNDEBUG -std=gnu11 -arch arm64 -Wall -Wno-unused-parameter -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable
+
+C_FLAGS = -O3 -DNDEBUG -std=gnu11 -arch arm64 -Wall -Wno-unused-parameter -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable
 

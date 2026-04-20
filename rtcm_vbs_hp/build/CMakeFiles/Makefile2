@@ -88,7 +88,7 @@ clean: CMakeFiles/rtcm_vbs_hp.dir/clean
 CMakeFiles/rtklib_min.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtklib_min.dir/build.make CMakeFiles/rtklib_min.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtklib_min.dir/build.make CMakeFiles/rtklib_min.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37 "Built target rtklib_min"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38 "Built target rtklib_min"
 .PHONY : CMakeFiles/rtklib_min.dir/all
 
 # Build rule for subdir invocation for target.
@@ -105,7 +105,7 @@ rtklib_min: CMakeFiles/rtklib_min.dir/rule
 # codegen rule for target.
 CMakeFiles/rtklib_min.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtklib_min.dir/build.make CMakeFiles/rtklib_min.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37 "Finished codegen for target rtklib_min"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38 "Finished codegen for target rtklib_min"
 .PHONY : CMakeFiles/rtklib_min.dir/codegen
 
 # clean rule for target.
@@ -120,12 +120,12 @@ CMakeFiles/rtklib_min.dir/clean:
 CMakeFiles/rtcm_vbs_hp.dir/all: CMakeFiles/rtklib_min.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtcm_vbs_hp.dir/build.make CMakeFiles/rtcm_vbs_hp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtcm_vbs_hp.dir/build.make CMakeFiles/rtcm_vbs_hp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target rtcm_vbs_hp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target rtcm_vbs_hp"
 .PHONY : CMakeFiles/rtcm_vbs_hp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rtcm_vbs_hp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles 38
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rtcm_vbs_hp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles 0
 .PHONY : CMakeFiles/rtcm_vbs_hp.dir/rule
@@ -137,7 +137,7 @@ rtcm_vbs_hp: CMakeFiles/rtcm_vbs_hp.dir/rule
 # codegen rule for target.
 CMakeFiles/rtcm_vbs_hp.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtcm_vbs_hp.dir/build.make CMakeFiles/rtcm_vbs_hp.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target rtcm_vbs_hp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target rtcm_vbs_hp"
 .PHONY : CMakeFiles/rtcm_vbs_hp.dir/codegen
 
 # clean rule for target.
