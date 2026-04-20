@@ -94,8 +94,9 @@ static double delta_trop(const double *base_pos_llh,
     return tv - tb;
 }
 
-int vbs_correct_obs(vbs_ctx_t *ctx, rtcm_t *rtcm,
-                    const unsigned char *side_per_obs)
+int vbs_correct_obs_ex(vbs_ctx_t *ctx, rtcm_t *rtcm,
+                       const unsigned char *side_per_obs,
+                       const double *sat_extra_m)
 {
     if (norm(ctx->vbs_ecef, 3) < 1e3) {
         /* VBS not resolved yet: drop obs to avoid sending anything
@@ -162,15 +163,21 @@ int vbs_correct_obs(vbs_ctx_t *ctx, rtcm_t *rtcm,
                                ctx->humi, o->time);
         }
 
+        double dnet = 0.0;
+        if (sat_extra_m && o->sat >= 1 && o->sat <= MAXSAT) {
+            dnet = sat_extra_m[o->sat - 1];
+            if (fabs(dnet) > 0.0) ctx->n_sat_netcorr++;
+        }
+
         for (int j = 0; j < NFREQ+NEXOBS; j++) {
             if (o->P[j] != 0.0) {
-                o->P[j] += drho + dtrop;
+                o->P[j] += drho + dtrop + dnet;
             }
             if (o->L[j] != 0.0) {
                 double freq = sat2freq(o->sat, o->code[j], &rtcm->nav);
                 if (freq > 0.0) {
                     double lam = CLIGHT / freq;
-                    o->L[j] += (drho + dtrop) / lam;
+                    o->L[j] += (drho + dtrop + dnet) / lam;
                 }
             }
             /* Doppler unchanged: VBS is static wrt the real bases. */
@@ -181,10 +188,16 @@ int vbs_correct_obs(vbs_ctx_t *ctx, rtcm_t *rtcm,
     }
 
     rtcm->obs.n = n_out;
-    ctx->n_obs_in       += n;
-    ctx->n_obs_out      += n_out;
+    ctx->n_obs_in        += n;
+    ctx->n_obs_out       += n_out;
     ctx->n_sat_corrected += n_out;
-    ctx->n_sat_no_eph   += n_noeph;
+    ctx->n_sat_no_eph    += n_noeph;
     ctx->n_frames_msm++;
     return n_out;
+}
+
+int vbs_correct_obs(vbs_ctx_t *ctx, rtcm_t *rtcm,
+                    const unsigned char *side_per_obs)
+{
+    return vbs_correct_obs_ex(ctx, rtcm, side_per_obs, NULL);
 }

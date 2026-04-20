@@ -60,6 +60,7 @@ typedef struct {
     long   n_obs_in, n_obs_out;
     long   n_sat_corrected, n_sat_no_eph;
     long   n_frames_1005_6, n_frames_msm;
+    long   n_sat_netcorr;
 } vbs_ctx_t;
 
 /* ---- lifecycle ---- */
@@ -85,11 +86,21 @@ void vbs_rewrite_station(vbs_ctx_t *ctx, rtcm_t *rtcm);
  *     non-NULL    -> array of length rtcm->obs.n; each element is 0 or 1
  *                    indicating which real base produced that obsd_t.
  *
+ *   sat_extra_m:
+ *     NULL        -> no extra correction.
+ *     non-NULL    -> additive per-satellite correction in metres, indexed by
+ *                    sat-1. Intended for network/ionosphere interpolation.
+ *
  * Satellites without usable ephemeris, or whose tagged base has not yet
  * been learned, are dropped from rtcm->obs so downstream encoding only
  * contains geometrically consistent measurements.
  *
  * Returns the number of satellites successfully corrected. */
+int  vbs_correct_obs_ex(vbs_ctx_t *ctx, rtcm_t *rtcm,
+                        const unsigned char *side_per_obs,
+                        const double *sat_extra_m);
+
+/* Backward-compatible wrapper without extra network correction. */
 int  vbs_correct_obs(vbs_ctx_t *ctx, rtcm_t *rtcm,
                      const unsigned char *side_per_obs);
 
