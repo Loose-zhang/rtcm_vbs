@@ -35,9 +35,7 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -133,7 +131,7 @@ events:
       - "ar"
     candidate_directories:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -172,6 +170,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -187,9 +186,7 @@ events:
     found: "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ar.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -263,7 +260,7 @@ events:
       - "ranlib"
     candidate_directories:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -302,6 +299,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -317,9 +315,7 @@ events:
     found: "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ranlib.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -393,7 +389,7 @@ events:
       - "strip"
     candidate_directories:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -432,6 +428,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -447,9 +444,7 @@ events:
     found: "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-strip.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -523,7 +518,7 @@ events:
       - "ld"
     candidate_directories:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -562,6 +557,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -577,9 +573,7 @@ events:
     found: "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/ld.lld.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -653,7 +647,7 @@ events:
       - "nm"
     candidate_directories:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -692,6 +686,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -707,9 +702,7 @@ events:
     found: "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-nm.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -783,7 +776,7 @@ events:
       - "objdump"
     candidate_directories:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -822,6 +815,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -837,9 +831,7 @@ events:
     found: "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-objdump.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -913,7 +905,7 @@ events:
       - "objcopy"
     candidate_directories:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -952,6 +944,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -967,9 +960,7 @@ events:
     found: "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-objcopy.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -1043,7 +1034,7 @@ events:
       - "readelf"
     candidate_directories:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -1082,6 +1073,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -1097,9 +1089,7 @@ events:
     found: "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-readelf.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -1173,7 +1163,7 @@ events:
       - "dlltool"
     candidate_directories:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -1212,6 +1202,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -1227,9 +1218,7 @@ events:
     found: "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-dlltool.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -1303,7 +1292,7 @@ events:
       - "addr2line"
     candidate_directories:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -1342,6 +1331,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -1357,9 +1347,7 @@ events:
     found: "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-addr2line.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -1432,7 +1420,7 @@ events:
       - "tapi"
     candidate_directories:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -1471,6 +1459,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -1485,9 +1474,9 @@ events:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/tapi.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/tapi.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/tapi"
-      - "C:/Program Files/CMake/bin/tapi.com"
-      - "C:/Program Files/CMake/bin/tapi.exe"
-      - "C:/Program Files/CMake/bin/tapi"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/tapi.com"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/tapi.exe"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/tapi"
       - "E:/python3.12/Scripts/tapi.com"
       - "E:/python3.12/Scripts/tapi.exe"
       - "E:/python3.12/Scripts/tapi"
@@ -1602,6 +1591,9 @@ events:
       - "E:/Git/GIT_installation/Git/cmd/tapi.com"
       - "E:/Git/GIT_installation/Git/cmd/tapi.exe"
       - "E:/Git/GIT_installation/Git/cmd/tapi"
+      - "C:/Program Files/CMake/bin/tapi.com"
+      - "C:/Program Files/CMake/bin/tapi.exe"
+      - "C:/Program Files/CMake/bin/tapi"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/tapi.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/tapi.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/tapi"
@@ -1635,9 +1627,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -1713,7 +1703,7 @@ events:
       - "llvm-ar"
     candidate_directories:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -1752,6 +1742,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -1766,9 +1757,9 @@ events:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ar-22.1.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ar-22.1.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ar-22.1"
-      - "C:/Program Files/CMake/bin/llvm-ar-22.1.com"
-      - "C:/Program Files/CMake/bin/llvm-ar-22.1.exe"
-      - "C:/Program Files/CMake/bin/llvm-ar-22.1"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ar-22.1.com"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ar-22.1.exe"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ar-22.1"
       - "E:/python3.12/Scripts/llvm-ar-22.1.com"
       - "E:/python3.12/Scripts/llvm-ar-22.1.exe"
       - "E:/python3.12/Scripts/llvm-ar-22.1"
@@ -1883,6 +1874,9 @@ events:
       - "E:/Git/GIT_installation/Git/cmd/llvm-ar-22.1.com"
       - "E:/Git/GIT_installation/Git/cmd/llvm-ar-22.1.exe"
       - "E:/Git/GIT_installation/Git/cmd/llvm-ar-22.1"
+      - "C:/Program Files/CMake/bin/llvm-ar-22.1.com"
+      - "C:/Program Files/CMake/bin/llvm-ar-22.1.exe"
+      - "C:/Program Files/CMake/bin/llvm-ar-22.1"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ar-22.1.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ar-22.1.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ar-22.1"
@@ -1916,9 +1910,9 @@ events:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ar-22.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ar-22.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ar-22"
-      - "C:/Program Files/CMake/bin/llvm-ar-22.com"
-      - "C:/Program Files/CMake/bin/llvm-ar-22.exe"
-      - "C:/Program Files/CMake/bin/llvm-ar-22"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ar-22.com"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ar-22.exe"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ar-22"
       - "E:/python3.12/Scripts/llvm-ar-22.com"
       - "E:/python3.12/Scripts/llvm-ar-22.exe"
       - "E:/python3.12/Scripts/llvm-ar-22"
@@ -2033,6 +2027,9 @@ events:
       - "E:/Git/GIT_installation/Git/cmd/llvm-ar-22.com"
       - "E:/Git/GIT_installation/Git/cmd/llvm-ar-22.exe"
       - "E:/Git/GIT_installation/Git/cmd/llvm-ar-22"
+      - "C:/Program Files/CMake/bin/llvm-ar-22.com"
+      - "C:/Program Files/CMake/bin/llvm-ar-22.exe"
+      - "C:/Program Files/CMake/bin/llvm-ar-22"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ar-22.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ar-22.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ar-22"
@@ -2066,9 +2063,9 @@ events:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ar22.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ar22.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ar22"
-      - "C:/Program Files/CMake/bin/llvm-ar22.com"
-      - "C:/Program Files/CMake/bin/llvm-ar22.exe"
-      - "C:/Program Files/CMake/bin/llvm-ar22"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ar22.com"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ar22.exe"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ar22"
       - "E:/python3.12/Scripts/llvm-ar22.com"
       - "E:/python3.12/Scripts/llvm-ar22.exe"
       - "E:/python3.12/Scripts/llvm-ar22"
@@ -2183,6 +2180,9 @@ events:
       - "E:/Git/GIT_installation/Git/cmd/llvm-ar22.com"
       - "E:/Git/GIT_installation/Git/cmd/llvm-ar22.exe"
       - "E:/Git/GIT_installation/Git/cmd/llvm-ar22"
+      - "C:/Program Files/CMake/bin/llvm-ar22.com"
+      - "C:/Program Files/CMake/bin/llvm-ar22.exe"
+      - "C:/Program Files/CMake/bin/llvm-ar22"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ar22.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ar22.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ar22"
@@ -2217,9 +2217,7 @@ events:
     found: "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ar.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -2295,7 +2293,7 @@ events:
       - "llvm-ranlib"
     candidate_directories:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -2334,6 +2332,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -2348,9 +2347,9 @@ events:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ranlib-22.1.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ranlib-22.1.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ranlib-22.1"
-      - "C:/Program Files/CMake/bin/llvm-ranlib-22.1.com"
-      - "C:/Program Files/CMake/bin/llvm-ranlib-22.1.exe"
-      - "C:/Program Files/CMake/bin/llvm-ranlib-22.1"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ranlib-22.1.com"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ranlib-22.1.exe"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ranlib-22.1"
       - "E:/python3.12/Scripts/llvm-ranlib-22.1.com"
       - "E:/python3.12/Scripts/llvm-ranlib-22.1.exe"
       - "E:/python3.12/Scripts/llvm-ranlib-22.1"
@@ -2465,6 +2464,9 @@ events:
       - "E:/Git/GIT_installation/Git/cmd/llvm-ranlib-22.1.com"
       - "E:/Git/GIT_installation/Git/cmd/llvm-ranlib-22.1.exe"
       - "E:/Git/GIT_installation/Git/cmd/llvm-ranlib-22.1"
+      - "C:/Program Files/CMake/bin/llvm-ranlib-22.1.com"
+      - "C:/Program Files/CMake/bin/llvm-ranlib-22.1.exe"
+      - "C:/Program Files/CMake/bin/llvm-ranlib-22.1"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ranlib-22.1.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ranlib-22.1.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ranlib-22.1"
@@ -2498,9 +2500,9 @@ events:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ranlib-22.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ranlib-22.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ranlib-22"
-      - "C:/Program Files/CMake/bin/llvm-ranlib-22.com"
-      - "C:/Program Files/CMake/bin/llvm-ranlib-22.exe"
-      - "C:/Program Files/CMake/bin/llvm-ranlib-22"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ranlib-22.com"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ranlib-22.exe"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ranlib-22"
       - "E:/python3.12/Scripts/llvm-ranlib-22.com"
       - "E:/python3.12/Scripts/llvm-ranlib-22.exe"
       - "E:/python3.12/Scripts/llvm-ranlib-22"
@@ -2615,6 +2617,9 @@ events:
       - "E:/Git/GIT_installation/Git/cmd/llvm-ranlib-22.com"
       - "E:/Git/GIT_installation/Git/cmd/llvm-ranlib-22.exe"
       - "E:/Git/GIT_installation/Git/cmd/llvm-ranlib-22"
+      - "C:/Program Files/CMake/bin/llvm-ranlib-22.com"
+      - "C:/Program Files/CMake/bin/llvm-ranlib-22.exe"
+      - "C:/Program Files/CMake/bin/llvm-ranlib-22"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ranlib-22.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ranlib-22.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ranlib-22"
@@ -2648,9 +2653,9 @@ events:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ranlib22.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ranlib22.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ranlib22"
-      - "C:/Program Files/CMake/bin/llvm-ranlib22.com"
-      - "C:/Program Files/CMake/bin/llvm-ranlib22.exe"
-      - "C:/Program Files/CMake/bin/llvm-ranlib22"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ranlib22.com"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ranlib22.exe"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/llvm-ranlib22"
       - "E:/python3.12/Scripts/llvm-ranlib22.com"
       - "E:/python3.12/Scripts/llvm-ranlib22.exe"
       - "E:/python3.12/Scripts/llvm-ranlib22"
@@ -2765,6 +2770,9 @@ events:
       - "E:/Git/GIT_installation/Git/cmd/llvm-ranlib22.com"
       - "E:/Git/GIT_installation/Git/cmd/llvm-ranlib22.exe"
       - "E:/Git/GIT_installation/Git/cmd/llvm-ranlib22"
+      - "C:/Program Files/CMake/bin/llvm-ranlib22.com"
+      - "C:/Program Files/CMake/bin/llvm-ranlib22.exe"
+      - "C:/Program Files/CMake/bin/llvm-ranlib22"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ranlib22.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ranlib22.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/llvm-ranlib22"
@@ -2799,9 +2807,7 @@ events:
     found: "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/llvm-ranlib.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -2877,7 +2883,7 @@ events:
       - "clang-scan-deps"
     candidate_directories:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -2916,6 +2922,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -2930,9 +2937,9 @@ events:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/clang-scan-deps-22.1.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/clang-scan-deps-22.1.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/clang-scan-deps-22.1"
-      - "C:/Program Files/CMake/bin/clang-scan-deps-22.1.com"
-      - "C:/Program Files/CMake/bin/clang-scan-deps-22.1.exe"
-      - "C:/Program Files/CMake/bin/clang-scan-deps-22.1"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/clang-scan-deps-22.1.com"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/clang-scan-deps-22.1.exe"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/clang-scan-deps-22.1"
       - "E:/python3.12/Scripts/clang-scan-deps-22.1.com"
       - "E:/python3.12/Scripts/clang-scan-deps-22.1.exe"
       - "E:/python3.12/Scripts/clang-scan-deps-22.1"
@@ -3047,6 +3054,9 @@ events:
       - "E:/Git/GIT_installation/Git/cmd/clang-scan-deps-22.1.com"
       - "E:/Git/GIT_installation/Git/cmd/clang-scan-deps-22.1.exe"
       - "E:/Git/GIT_installation/Git/cmd/clang-scan-deps-22.1"
+      - "C:/Program Files/CMake/bin/clang-scan-deps-22.1.com"
+      - "C:/Program Files/CMake/bin/clang-scan-deps-22.1.exe"
+      - "C:/Program Files/CMake/bin/clang-scan-deps-22.1"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/clang-scan-deps-22.1.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/clang-scan-deps-22.1.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/clang-scan-deps-22.1"
@@ -3080,9 +3090,9 @@ events:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/clang-scan-deps-22.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/clang-scan-deps-22.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/clang-scan-deps-22"
-      - "C:/Program Files/CMake/bin/clang-scan-deps-22.com"
-      - "C:/Program Files/CMake/bin/clang-scan-deps-22.exe"
-      - "C:/Program Files/CMake/bin/clang-scan-deps-22"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/clang-scan-deps-22.com"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/clang-scan-deps-22.exe"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/clang-scan-deps-22"
       - "E:/python3.12/Scripts/clang-scan-deps-22.com"
       - "E:/python3.12/Scripts/clang-scan-deps-22.exe"
       - "E:/python3.12/Scripts/clang-scan-deps-22"
@@ -3197,6 +3207,9 @@ events:
       - "E:/Git/GIT_installation/Git/cmd/clang-scan-deps-22.com"
       - "E:/Git/GIT_installation/Git/cmd/clang-scan-deps-22.exe"
       - "E:/Git/GIT_installation/Git/cmd/clang-scan-deps-22"
+      - "C:/Program Files/CMake/bin/clang-scan-deps-22.com"
+      - "C:/Program Files/CMake/bin/clang-scan-deps-22.exe"
+      - "C:/Program Files/CMake/bin/clang-scan-deps-22"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/clang-scan-deps-22.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/clang-scan-deps-22.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/clang-scan-deps-22"
@@ -3230,9 +3243,9 @@ events:
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/clang-scan-deps22.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/clang-scan-deps22.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/clang-scan-deps22"
-      - "C:/Program Files/CMake/bin/clang-scan-deps22.com"
-      - "C:/Program Files/CMake/bin/clang-scan-deps22.exe"
-      - "C:/Program Files/CMake/bin/clang-scan-deps22"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/clang-scan-deps22.com"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/clang-scan-deps22.exe"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/clang-scan-deps22"
       - "E:/python3.12/Scripts/clang-scan-deps22.com"
       - "E:/python3.12/Scripts/clang-scan-deps22.exe"
       - "E:/python3.12/Scripts/clang-scan-deps22"
@@ -3347,6 +3360,9 @@ events:
       - "E:/Git/GIT_installation/Git/cmd/clang-scan-deps22.com"
       - "E:/Git/GIT_installation/Git/cmd/clang-scan-deps22.exe"
       - "E:/Git/GIT_installation/Git/cmd/clang-scan-deps22"
+      - "C:/Program Files/CMake/bin/clang-scan-deps22.com"
+      - "C:/Program Files/CMake/bin/clang-scan-deps22.exe"
+      - "C:/Program Files/CMake/bin/clang-scan-deps22"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/clang-scan-deps22.com"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/clang-scan-deps22.exe"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/clang-scan-deps22"
@@ -3381,9 +3397,7 @@ events:
     found: "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/clang-scan-deps.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -3460,8 +3474,7 @@ events:
       - "windres"
       - "windres"
     candidate_directories:
-      - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/"
       - "E:/python3.12/Scripts/"
       - "E:/python3.12/"
       - "E:/python/pyinstall/Scripts/"
@@ -3500,6 +3513,7 @@ events:
       - "E:/xshell/xftp/"
       - "E:/xshell/xshell/"
       - "E:/Git/GIT_installation/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/lenovo/AppData/Roaming/npm/"
       - "E:/python/pycinstall/PyCharm 2019.3.3/bin/"
@@ -3510,6 +3524,7 @@ events:
       - "C:/Users/lenovo/AppData/Roaming/Programs/Zero Install/"
       - "E:/vscode/Microsoft VS Code/bin/"
       - "E:/Cursor/cursor/cursor/resources/app/bin/"
+      - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -3523,13 +3538,161 @@ events:
       - "C:/Program Files (x86)/rtcm_vbs_hp/sbin/"
       - "C:/Program Files (x86)/rtcm_vbs_hp/"
     searched_directories:
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/windres.com"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/windres.exe"
+      - "E:/Cursor/cursor/cursor/resources/app/resources/helpers/windres"
+      - "E:/python3.12/Scripts/windres.com"
+      - "E:/python3.12/Scripts/windres.exe"
+      - "E:/python3.12/Scripts/windres"
+      - "E:/python3.12/windres.com"
+      - "E:/python3.12/windres.exe"
+      - "E:/python3.12/windres"
+      - "E:/python/pyinstall/Scripts/windres.com"
+      - "E:/python/pyinstall/Scripts/windres.exe"
+      - "E:/python/pyinstall/Scripts/windres"
+      - "E:/python/pyinstall/windres.com"
+      - "E:/python/pyinstall/windres.exe"
+      - "E:/python/pyinstall/windres"
+      - "E:/Vmware/bin/windres.com"
+      - "E:/Vmware/bin/windres.exe"
+      - "E:/Vmware/bin/windres"
+      - "C:/Windows/System32/windres.com"
+      - "C:/Windows/System32/windres.exe"
+      - "C:/Windows/System32/windres"
+      - "C:/Windows/windres.com"
+      - "C:/Windows/windres.exe"
+      - "C:/Windows/windres"
+      - "C:/Windows/System32/wbem/windres.com"
+      - "C:/Windows/System32/wbem/windres.exe"
+      - "C:/Windows/System32/wbem/windres"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres"
+      - "C:/Program Files (x86)/Microsoft SQL Server/100/Tools/Binn/windres.com"
+      - "C:/Program Files (x86)/Microsoft SQL Server/100/Tools/Binn/windres.exe"
+      - "C:/Program Files (x86)/Microsoft SQL Server/100/Tools/Binn/windres"
+      - "C:/Program Files/Microsoft SQL Server/100/Tools/Binn/windres.com"
+      - "C:/Program Files/Microsoft SQL Server/100/Tools/Binn/windres.exe"
+      - "C:/Program Files/Microsoft SQL Server/100/Tools/Binn/windres"
+      - "C:/Program Files/Microsoft SQL Server/100/DTS/Binn/windres.com"
+      - "C:/Program Files/Microsoft SQL Server/100/DTS/Binn/windres.exe"
+      - "C:/Program Files/Microsoft SQL Server/100/DTS/Binn/windres"
+      - "C:/Windows/System32/OpenSSH/windres.com"
+      - "C:/Windows/System32/OpenSSH/windres.exe"
+      - "C:/Windows/System32/OpenSSH/windres"
+      - "E:/MATLAB/runtime/win64/windres.com"
+      - "E:/MATLAB/runtime/win64/windres.exe"
+      - "E:/MATLAB/runtime/win64/windres"
+      - "E:/MATLAB/bin/windres.com"
+      - "E:/MATLAB/bin/windres.exe"
+      - "E:/MATLAB/bin/windres"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/windres.com"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/windres.exe"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/windres"
+      - "C:/Program Files/dotnet/windres.com"
+      - "C:/Program Files/dotnet/windres.exe"
+      - "C:/Program Files/dotnet/windres"
+      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/windres.com"
+      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/windres.exe"
+      - "C:/Program Files/Microsoft SQL Server/130/Tools/Binn/windres"
+      - "E:/jdk/bin/windres.com"
+      - "E:/jdk/bin/windres.exe"
+      - "E:/jdk/bin/windres"
+      - "/bin/windres.com"
+      - "/bin/windres.exe"
+      - "/bin/windres"
+      - "D:/PCL/PCL1.9/PCL 1.9.1/bin/windres.com"
+      - "D:/PCL/PCL1.9/PCL 1.9.1/bin/windres.exe"
+      - "D:/PCL/PCL1.9/PCL 1.9.1/bin/windres"
+      - "/jre/bin/windres.com"
+      - "/jre/bin/windres.exe"
+      - "/jre/bin/windres"
+      - "E:/spss/JRE/bin/windres.com"
+      - "E:/spss/JRE/bin/windres.exe"
+      - "E:/spss/JRE/bin/windres"
+      - "D:/BaiduNetdiskDownload/wget-1.21.2-win64/windres.com"
+      - "D:/BaiduNetdiskDownload/wget-1.21.2-win64/windres.exe"
+      - "D:/BaiduNetdiskDownload/wget-1.21.2-win64/windres"
+      - "E:/CURL/curl-7.81.0-win64-mingw/bin/windres.com"
+      - "E:/CURL/curl-7.81.0-win64-mingw/bin/windres.exe"
+      - "E:/CURL/curl-7.81.0-win64-mingw/bin/windres"
+      - "E:/MATLAB/v92/runtime/win64/windres.com"
+      - "E:/MATLAB/v92/runtime/win64/windres.exe"
+      - "E:/MATLAB/v92/runtime/win64/windres"
+      - "C:/Program Files (x86)/GnuWin32/bin/windres.com"
+      - "C:/Program Files (x86)/GnuWin32/bin/windres.exe"
+      - "C:/Program Files (x86)/GnuWin32/bin/windres"
+      - "E:/MATLAB/application/windres.com"
+      - "E:/MATLAB/application/windres.exe"
+      - "E:/MATLAB/application/windres"
+      - "E:/python/get_aqi-main/windres.com"
+      - "E:/python/get_aqi-main/windres.exe"
+      - "E:/python/get_aqi-main/windres"
+      - "E:/MATLAB/install/runtime/win64/windres.com"
+      - "E:/MATLAB/install/runtime/win64/windres.exe"
+      - "E:/MATLAB/install/runtime/win64/windres"
+      - "E:/MATLAB/install/bin/windres.com"
+      - "E:/MATLAB/install/bin/windres.exe"
+      - "E:/MATLAB/install/bin/windres"
+      - "E:/gnss_measurement_for_Android/v912/runtime/win64/windres.com"
+      - "E:/gnss_measurement_for_Android/v912/runtime/win64/windres.exe"
+      - "E:/gnss_measurement_for_Android/v912/runtime/win64/windres"
+      - "E:/ADB/platform-tools/windres.com"
+      - "E:/ADB/platform-tools/windres.exe"
+      - "E:/ADB/platform-tools/windres"
+      - "E:/gmt/gmt.6.4/gmt6/bin/windres.com"
+      - "E:/gmt/gmt.6.4/gmt6/bin/windres.exe"
+      - "E:/gmt/gmt.6.4/gmt6/bin/windres"
+      - "C:/Program Files/Tailscale/windres.com"
+      - "C:/Program Files/Tailscale/windres.exe"
+      - "C:/Program Files/Tailscale/windres"
+      - "E:/xshell/xftp/windres.com"
+      - "E:/xshell/xftp/windres.exe"
+      - "E:/xshell/xftp/windres"
+      - "E:/xshell/xshell/windres.com"
+      - "E:/xshell/xshell/windres.exe"
+      - "E:/xshell/xshell/windres"
+      - "E:/Git/GIT_installation/Git/cmd/windres.com"
+      - "E:/Git/GIT_installation/Git/cmd/windres.exe"
+      - "E:/Git/GIT_installation/Git/cmd/windres"
+      - "C:/Program Files/CMake/bin/windres.com"
+      - "C:/Program Files/CMake/bin/windres.exe"
+      - "C:/Program Files/CMake/bin/windres"
+      - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/windres.com"
+      - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/windres.exe"
+      - "C:/Users/lenovo/AppData/Local/Microsoft/WindowsApps/windres"
+      - "C:/Users/lenovo/AppData/Roaming/npm/windres.com"
+      - "C:/Users/lenovo/AppData/Roaming/npm/windres.exe"
+      - "C:/Users/lenovo/AppData/Roaming/npm/windres"
+      - "E:/python/pycinstall/PyCharm 2019.3.3/bin/windres.com"
+      - "E:/python/pycinstall/PyCharm 2019.3.3/bin/windres.exe"
+      - "E:/python/pycinstall/PyCharm 2019.3.3/bin/windres"
+      - "E:/LaTeX/texlive/2022/bin/win32/windres.com"
+      - "E:/LaTeX/texlive/2022/bin/win32/windres.exe"
+      - "E:/LaTeX/texlive/2022/bin/win32/windres"
+      - "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/windres.com"
+      - "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/windres.exe"
+      - "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/windres"
+      - "E:/Program Files/Mozilla Firefox/windres.com"
+      - "E:/Program Files/Mozilla Firefox/windres.exe"
+      - "E:/Program Files/Mozilla Firefox/windres"
+      - "C:/Program Files/Bandizip/windres.com"
+      - "C:/Program Files/Bandizip/windres.exe"
+      - "C:/Program Files/Bandizip/windres"
+      - "C:/Users/lenovo/AppData/Roaming/Programs/Zero Install/windres.com"
+      - "C:/Users/lenovo/AppData/Roaming/Programs/Zero Install/windres.exe"
+      - "C:/Users/lenovo/AppData/Roaming/Programs/Zero Install/windres"
+      - "E:/vscode/Microsoft VS Code/bin/windres.com"
+      - "E:/vscode/Microsoft VS Code/bin/windres.exe"
+      - "E:/vscode/Microsoft VS Code/bin/windres"
+      - "E:/Cursor/cursor/cursor/resources/app/bin/windres.com"
+      - "E:/Cursor/cursor/cursor/resources/app/bin/windres.exe"
+      - "E:/Cursor/cursor/cursor/resources/app/bin/windres"
       - "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/windres.com"
     found: "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/windres.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin"
+        - "e:\\Cursor\\cursor\\cursor\\resources\\app\\resources\\helpers"
         - "E:\\python3.12\\Scripts\\"
         - "E:\\python3.12\\"
         - "E:\\python\\pyinstall\\Scripts\\"
@@ -3596,8 +3759,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-0iwo1s"
-      binary: "E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-0iwo1s"
+      source: "E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-9k1sv6"
+      binary: "E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-9k1sv6"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -3606,20 +3769,20 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-0iwo1s'
+        Change Dir: 'E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-9k1sv6'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin\\mingw32-make.exe -f Makefile cmTC_1da31/fast
-        C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1da31.dir\\build.make CMakeFiles/cmTC_1da31.dir/build
-        mingw32-make[1]: Entering directory 'E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-0iwo1s'
-        Building C object CMakeFiles/cmTC_1da31.dir/CMakeCCompilerABI.c.obj
-        C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin\\gcc.exe   -v -MD -MT CMakeFiles/cmTC_1da31.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_1da31.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles\\cmTC_1da31.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/mingw32-make.exe -f Makefile cmTC_4beba/fast
+        C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4beba.dir\\build.make CMakeFiles/cmTC_4beba.dir/build
+        mingw32-make[1]: Entering directory 'E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-9k1sv6'
+        Building C object CMakeFiles/cmTC_4beba.dir/CMakeCCompilerABI.c.obj
+        C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin\\gcc.exe   -v -MD -MT CMakeFiles/cmTC_4beba.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_4beba.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles\\cmTC_4beba.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
         clang version 22.1.3 (https://github.com/llvm/llvm-project.git e9846648fd6183ee6d8cbdb4502213fcf902a211)
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin
         Configuration file: C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg
          (in-process)
-         "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/clang-22.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-0iwo1s -v -fcoverage-compilation-dir=E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-0iwo1s -resource-dir C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22 -dependency-file "CMakeFiles\\\\cmTC_1da31.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_1da31.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/include -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/include -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o "CMakeFiles\\\\cmTC_1da31.dir\\\\CMakeCCompilerABI.c.obj" -x c "C:\\\\Program Files\\\\CMake\\\\share\\\\cmake-4.3\\\\Modules\\\\CMakeCCompilerABI.c"
+         "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/clang-22.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-9k1sv6 -v -fcoverage-compilation-dir=E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-9k1sv6 -resource-dir C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22 -dependency-file "CMakeFiles\\\\cmTC_4beba.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_4beba.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/include -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/include -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o "CMakeFiles\\\\cmTC_4beba.dir\\\\CMakeCCompilerABI.c.obj" -x c "C:\\\\Program Files\\\\CMake\\\\share\\\\cmake-4.3\\\\Modules\\\\CMakeCCompilerABI.c"
         clang -cc1 version 22.1.3 based upon LLVM 22.1.3 default target x86_64-w64-mingw32
         ignoring nonexistent directory "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/include"
         ignoring nonexistent directory "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/usr/include"
@@ -3628,19 +3791,19 @@ events:
          C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/include
          C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/include
         End of search list.
-        Linking C executable cmTC_1da31.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_1da31.dir\\link.txt --verbose=1
+        Linking C executable cmTC_4beba.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_4beba.dir\\link.txt --verbose=1
         clang version 22.1.3 (https://github.com/llvm/llvm-project.git e9846648fd6183ee6d8cbdb4502213fcf902a211)
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin
         Configuration file: C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg
-         "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_1da31.exe C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/lib/windows -v --whole-archive "CMakeFiles\\\\cmTC_1da31.dir/objects.a" --no-whole-archive --out-implib libcmTC_1da31.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crtend.o
+         "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_4beba.exe C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/lib/windows -v --whole-archive "CMakeFiles\\\\cmTC_4beba.dir/objects.a" --no-whole-archive --out-implib libcmTC_4beba.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crtend.o
         LLD 22.1.3 (https://github.com/llvm/llvm-project.git e9846648fd6183ee6d8cbdb4502213fcf902a211) (compatible with GNU linkers)
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_1da31.dir/objects.a
-        C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin\\llvm-ar.exe qc CMakeFiles\\cmTC_1da31.dir/objects.a @CMakeFiles\\cmTC_1da31.dir\\objects1.rsp
-        C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_1da31.dir/objects.a -Wl,--no-whole-archive -o cmTC_1da31.exe -Wl,--out-implib,libcmTC_1da31.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-0iwo1s'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_4beba.dir/objects.a
+        C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin\\llvm-ar.exe qc CMakeFiles\\cmTC_4beba.dir/objects.a @CMakeFiles\\cmTC_4beba.dir\\objects1.rsp
+        C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_4beba.dir/objects.a -Wl,--no-whole-archive -o cmTC_4beba.exe -Wl,--out-implib,libcmTC_4beba.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-9k1sv6'
         
       exitCode: 0
   -
@@ -3671,20 +3834,20 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-0iwo1s']
+        ignore line: [Change Dir: 'E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-9k1sv6']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin\\mingw32-make.exe -f Makefile cmTC_1da31/fast]
-        ignore line: [C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1da31.dir\\build.make CMakeFiles/cmTC_1da31.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-0iwo1s']
-        ignore line: [Building C object CMakeFiles/cmTC_1da31.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin\\gcc.exe   -v -MD -MT CMakeFiles/cmTC_1da31.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_1da31.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles\\cmTC_1da31.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/mingw32-make.exe -f Makefile cmTC_4beba/fast]
+        ignore line: [C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4beba.dir\\build.make CMakeFiles/cmTC_4beba.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-9k1sv6']
+        ignore line: [Building C object CMakeFiles/cmTC_4beba.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20260407-ucrt-x86_64\\bin\\gcc.exe   -v -MD -MT CMakeFiles/cmTC_4beba.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_4beba.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles\\cmTC_4beba.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"]
         ignore line: [clang version 22.1.3 (https://github.com/llvm/llvm-project.git e9846648fd6183ee6d8cbdb4502213fcf902a211)]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin]
         ignore line: [Configuration file: C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg]
         ignore line: [ (in-process)]
-        ignore line: [ "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/clang-22.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-0iwo1s -v -fcoverage-compilation-dir=E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-0iwo1s -resource-dir C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22 -dependency-file "CMakeFiles\\\\cmTC_1da31.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_1da31.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/include -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/include -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o "CMakeFiles\\\\cmTC_1da31.dir\\\\CMakeCCompilerABI.c.obj" -x c "C:\\\\Program Files\\\\CMake\\\\share\\\\cmake-4.3\\\\Modules\\\\CMakeCCompilerABI.c"]
+        ignore line: [ "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/clang-22.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-9k1sv6 -v -fcoverage-compilation-dir=E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/CMakeFiles/CMakeScratch/TryCompile-9k1sv6 -resource-dir C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22 -dependency-file "CMakeFiles\\\\cmTC_4beba.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_4beba.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/include -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/include -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o "CMakeFiles\\\\cmTC_4beba.dir\\\\CMakeCCompilerABI.c.obj" -x c "C:\\\\Program Files\\\\CMake\\\\share\\\\cmake-4.3\\\\Modules\\\\CMakeCCompilerABI.c"]
         ignore line: [clang -cc1 version 22.1.3 based upon LLVM 22.1.3 default target x86_64-w64-mingw32]
         ignore line: [ignoring nonexistent directory "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/include"]
         ignore line: [ignoring nonexistent directory "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/usr/include"]
@@ -3693,20 +3856,20 @@ events:
         ignore line: [ C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/include]
         ignore line: [ C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_1da31.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_1da31.dir\\link.txt --verbose=1]
+        ignore line: [Linking C executable cmTC_4beba.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_4beba.dir\\link.txt --verbose=1]
         ignore line: [clang version 22.1.3 (https://github.com/llvm/llvm-project.git e9846648fd6183ee6d8cbdb4502213fcf902a211)]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin]
         ignore line: [Configuration file: C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg]
-        link line: [ "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_1da31.exe C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/lib/windows -v --whole-archive "CMakeFiles\\\\cmTC_1da31.dir/objects.a" --no-whole-archive --out-implib libcmTC_1da31.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crtend.o]
+        link line: [ "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_4beba.exe C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib -LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/lib/windows -v --whole-archive "CMakeFiles\\\\cmTC_4beba.dir/objects.a" --no-whole-archive --out-implib libcmTC_4beba.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crtend.o]
           arg [C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/ld.lld] ==> ignore
           arg [-m] ==> ignore
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_1da31.exe] ==> ignore
+          arg [cmTC_4beba.exe] ==> ignore
           arg [C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o] ==> obj [C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o]
           arg [C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o] ==> obj [C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o]
           arg [-LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib] ==> dir [C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/x86_64-w64-mingw32/lib]
@@ -3715,10 +3878,10 @@ events:
           arg [-LC:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/lib/windows] ==> dir [C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/lib/clang/22/lib/windows]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\\\cmTC_1da31.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\\\cmTC_4beba.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_1da31.dll.a] ==> ignore
+          arg [libcmTC_4beba.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
