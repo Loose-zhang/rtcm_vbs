@@ -192,10 +192,16 @@ static int update_one(merger_t *m, int sat_idx, int slot_a,
     return st->valid ? 1 : 0;
 }
 
-/* Apply per-(sat,slot) bias to B's L[] when available. For signals without a
- * usable bias, suppress carrier-phase and Doppler so B can still contribute
- * pseudorange-only observations without injecting unstable phase. Returns number
- * of signals normalised. */
+/* Apply per-(sat,slot) bias to B's L[] when available.
+ *
+ * Policy for B-only signals:
+ *   1) If a valid B->A bias exists, normalise into A frame.
+ *   2) If this (sat,code) has been seen in A/B overlap before but bias is
+ *      currently invalid, suppress L/D to avoid injecting unstable phase.
+ *   3) If this (sat,code) has never had A/B overlap history, keep original
+ *      B-side L/D so independent-constellation fixing (e.g. BDS-only on B)
+ *      remains possible.
+ */
 static int normalise_b(merger_t *m, obsd_t *ob)
 {
     int sat_idx = ob->sat - 1;
@@ -205,25 +211,23 @@ static int normalise_b(merger_t *m, obsd_t *ob)
     for (int j = 0; j < NFREQ+NEXOBS; j++) {
         if (ob->L[j] == 0.0) continue;
         unsigned char code = ob->code[j];
-        if (!code) {
-            ob->L[j] = 0.0;
-            ob->D[j] = 0.0;
-            ob->LLI[j] = 0;
-            m->n_b_unaligned_lli++;
-            continue;
-        }
+        if (!code) continue;
 
         align_state_t *match = NULL;
+        int has_history = 0;
         for (int k = 0; k < NFREQ+NEXOBS; k++) {
             align_state_t *st = &m->align[sat_idx][k];
-            if (st->code == code) { match = st; break; }
+            if (st->code != code) continue;
+            has_history = 1;
+            if (!match) match = st;
+            if (st->valid) { match = st; break; }
         }
 
         if (match && match->valid) {
             ob->L[j] += match->bias_cyc;
             n_norm++;
             m->n_b_norm_applied++;
-        } else {
+        } else if (has_history) {
             ob->L[j] = 0.0;
             ob->D[j] = 0.0;
             ob->LLI[j] = 0;
