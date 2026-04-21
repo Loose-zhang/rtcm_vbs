@@ -1,0 +1,4 @@
+/Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles/rtklib_min.dir
+/Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles/rtcm_vbs_hp.dir
+/Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles/edit_cache.dir
+/Users/mingsongz/download/rtcm_vbs/rtcm_vbs_hp/build/CMakeFiles/rebuild_cache.dir
