@@ -192,8 +192,10 @@ static int update_one(merger_t *m, int sat_idx, int slot_a,
     return st->valid ? 1 : 0;
 }
 
-/* Apply per-(sat,slot) bias to B's L[]; force LLI_SLIP on signals that have
- * no valid bias. Returns number of signals normalised. */
+/* Apply per-(sat,slot) bias to B's L[] when available. For signals without a
+ * usable bias, suppress carrier-phase and Doppler so B can still contribute
+ * pseudorange-only observations without injecting unstable phase. Returns number
+ * of signals normalised. */
 static int normalise_b(merger_t *m, obsd_t *ob)
 {
     int sat_idx = ob->sat - 1;
@@ -203,11 +205,14 @@ static int normalise_b(merger_t *m, obsd_t *ob)
     for (int j = 0; j < NFREQ+NEXOBS; j++) {
         if (ob->L[j] == 0.0) continue;
         unsigned char code = ob->code[j];
-        if (!code) continue;
+        if (!code) {
+            ob->L[j] = 0.0;
+            ob->D[j] = 0.0;
+            ob->LLI[j] = 0;
+            m->n_b_unaligned_lli++;
+            continue;
+        }
 
-        /* Find a state for this code; A's slot index for the same code may
-         * differ from B's. We scan A's state slots for the same code on
-         * this satellite. */
         align_state_t *match = NULL;
         for (int k = 0; k < NFREQ+NEXOBS; k++) {
             align_state_t *st = &m->align[sat_idx][k];
@@ -219,30 +224,13 @@ static int normalise_b(merger_t *m, obsd_t *ob)
             n_norm++;
             m->n_b_norm_applied++;
         } else {
-            ob->LLI[j] |= LLI_SLIP;
+            ob->L[j] = 0.0;
+            ob->D[j] = 0.0;
+            ob->LLI[j] = 0;
             m->n_b_unaligned_lli++;
         }
     }
     return n_norm;
-}
-
-/* Decide if every active L signal in B has a valid alignment for that sat. */
-static int b_fully_aligned(const merger_t *m, const obsd_t *ob)
-{
-    int sat_idx = ob->sat - 1;
-    if (sat_idx < 0 || sat_idx >= MAXSAT) return 0;
-    for (int j = 0; j < NFREQ+NEXOBS; j++) {
-        if (ob->L[j] == 0.0) continue;
-        unsigned char code = ob->code[j];
-        if (!code) continue;
-        int hit = 0;
-        for (int k = 0; k < NFREQ+NEXOBS; k++) {
-            const align_state_t *st = &m->align[sat_idx][k];
-            if (st->code == code && st->valid) { hit = 1; break; }
-        }
-        if (!hit) return 0;
-    }
-    return 1;
 }
 
 int merger_align_and_merge(merger_t *m,
@@ -287,7 +275,7 @@ int merger_align_and_merge(merger_t *m,
         return out_n;
     }
 
-    /* Both present: choose per satellite. */
+    /* Both present: keep A as the phase reference for shared satellites. */
     unsigned char used_b[MAXOBS] = {0};
     for (int i = 0; i < na && out_n < MAXOBS; i++) {
         int sat = obs_a[i].sat;
@@ -302,33 +290,16 @@ int merger_align_and_merge(merger_t *m,
         used_b[bi] = 1;
         m->n_both++;
 
-        double sa = avg_snr(&obs_a[i]);
-        double sb = avg_snr(&obs_b[bi]);
-
-        int pick_b = 0;
-        if (sb > sa + (double)SNR_HYSTERESIS) {
-            /* sb noticeably better than sa; tentatively pick B. */
-            if (b_fully_aligned(m, &obs_b[bi])) {
-                pick_b = 1;
-            } else {
-                m->n_switch_blocked++;
-            }
-        }
-
-        if (pick_b) {
-            out_obs[out_n] = obs_b[bi];
-            normalise_b(m, &out_obs[out_n]);
-            m->n_chose_b++;
-        } else {
-            out_obs[out_n] = obs_a[i];
-            m->n_chose_a++;
-        }
+        /* Shared satellite: always keep A to avoid per-satellite A/B switching. */
+        out_obs[out_n] = obs_a[i];
+        m->n_chose_a++;
         out_n++;
     }
     for (int j = 0; j < nb && out_n < MAXOBS; j++) {
         if (used_b[j]) continue;
         out_obs[out_n] = obs_b[j];
         normalise_b(m, &out_obs[out_n]);
+        m->n_chose_b++;
         out_n++;
     }
     return out_n;
