@@ -86,7 +86,7 @@ typedef struct {
 
     long        n_b_norm_applied;
     long        n_b_unaligned_lli;
-    long        n_b_prop_nodopp;   /* B signals skipped in propagation: D==0 & dt significant */
+    long        n_b_prop_nodopp;   /* B signals: no Doppler, L/P not Doppler-stepped to t_ref */
 } merger_t;
 
 /* pair_tol_ms: max A/B obs time difference for paired merge (1–250 ms, default 50). */

@@ -1,4 +1,4 @@
-set(CMAKE_C_COMPILER "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/gcc.exe")
+set(CMAKE_C_COMPILER "C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/cc.exe")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "Clang")
 set(CMAKE_C_COMPILER_VERSION "22.1.3")

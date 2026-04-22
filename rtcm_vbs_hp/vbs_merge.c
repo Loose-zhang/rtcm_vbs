@@ -24,9 +24,11 @@
  * RTKLIB Doppler sign: D>0 means satellite is approaching (decreasing range),
  * so carrier phase increases and pseudorange decreases with time.
  *
- * If Doppler is zero (MSM4, or not decoded) and |dt| > PROP_DT_THRESH_S the
- * signal cannot be reliably propagated; LLI_SLIP is set and the counter
- * n_b_prop_nodopp is incremented so the caller can monitor the situation.
+ * If Doppler is zero (MSM4 omits Doppler; some receivers leave D=0) the
+ * rigorous L/P step cannot be applied.  We keep the measured L and P
+ * (same as leaving P unchanged in older versions) so small |dt| from
+ * A/B epoch skew does not wipe all B-side carrier, which would destroy
+ * dual-base AR.  n_b_prop_nodopp counts these no-Doppler propagation skips.
  *
  * The obs time field is set to t_ref after propagation. */
 static void propagate_b_to_ref(merger_t *m, obsd_t *ob, gtime_t t_ref)
@@ -62,14 +64,12 @@ static void propagate_b_to_ref(merger_t *m, obsd_t *ob, gtime_t t_ref)
         double D = (double)ob->D[j];  /* Hz (cycles/s) */
 
         if (D == 0.0) {
-            /* No Doppler available: cannot propagate reliably.
-             * Zero out L to silently suppress this signal rather than
-             * injecting LLI_SLIP which forces an RTK ambiguity reset. */
-            if (ob->L[j] != 0.0) {
-                ob->L[j]  = 0.0;
-                ob->LLI[j] = 0;
-                m->n_b_prop_nodopp++;
-            }
+            /* No Doppler: cannot apply the L/P differential correction.
+             * Keeping L and P avoids wiping B-side phase when streams are
+             * MSM4 or D is missing; inter-base time skew is bounded by
+             * pair_tol (default 50 ms) so residual phase error is usually
+             * far smaller than losing carrier entirely. */
+            m->n_b_prop_nodopp++;
             continue;
         }
 
