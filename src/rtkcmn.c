@@ -143,18 +143,19 @@
 *                           use integer types in stdint.h
 *                           suppress warnings
 *-----------------------------------------------------------------------------*/
+#ifndef _WIN32
 #define _POSIX_C_SOURCE 199506
+#endif
 #include <stdarg.h>
 #include <ctype.h>
 #include <errno.h>
-#include <dirent.h>
 #include <time.h>
+#if !defined(_WIN32) && !defined(WIN32)
+#include <dirent.h>
 #include <sys/time.h>
+#endif
 #include <sys/stat.h>
 #include <sys/types.h>
-#ifdef _WIN32
-#include <windows.h>
-#endif
 #include "rtklib.h"
 
 /* constants -----------------------------------------------------------------*/
