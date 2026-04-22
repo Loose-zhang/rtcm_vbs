@@ -61,6 +61,13 @@ typedef struct {
 typedef struct {
     epoch_buf_t a, b;
     int         window_ms;
+    /* If no RTCM from this side for this long (ms), drop its stash when pairing
+     * (sleeping / dead link). Must be >> window_ms so normal A/B network skew
+     * does not discard the early-arriving epoch. */
+    int         partner_dead_ms;
+    /* If recv age exceeds this, buffer is dropped without emit (stuck process,
+     * very old RTCM). Derived in merger_init from window_ms. */
+    int         max_stale_ms;
     /* Max |time_A - time_B| (s) to treat A/B as the same epoch for dual merge.
      * Larger values reduce A-only/B-only ping-pong when streams have timing skew. */
     double      pair_tol_s;
@@ -87,10 +94,14 @@ typedef struct {
     long        n_b_norm_applied;
     long        n_b_unaligned_lli;
     long        n_b_prop_nodopp;   /* B signals: no Doppler, L/P not Doppler-stepped to t_ref */
+
+    long        n_drop_stale_recv; /* stash dropped: partner silent > partner_dead_ms */
+    long        n_drop_abs_stale;  /* stash dropped: recv age > max_stale_ms   */
 } merger_t;
 
-/* pair_tol_ms: max A/B obs time difference for paired merge (1–250 ms, default 50). */
-void merger_init(merger_t *m, int window_ms, int pair_tol_ms);
+/* window_ms: min wait before solo emit. partner_dead_ms: drop other side if silent
+ * that long (0 -> default 3000). pair_tol_ms: max A/B GPS time diff for merge. */
+void merger_init(merger_t *m, int window_ms, int pair_tol_ms, int partner_dead_ms);
 
 /* Stash the obs arriving on channel A (side==0) or B (side==1).
  * Overwrites any stale epoch without consuming. */

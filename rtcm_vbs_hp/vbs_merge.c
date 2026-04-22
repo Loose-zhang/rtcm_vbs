@@ -80,10 +80,20 @@ static void propagate_b_to_ref(merger_t *m, obsd_t *ob, gtime_t t_ref)
     }
 }
 
-void merger_init(merger_t *m, int window_ms, int pair_tol_ms)
+void merger_init(merger_t *m, int window_ms, int pair_tol_ms, int partner_dead_ms)
 {
     memset(m, 0, sizeof(*m));
     m->window_ms = window_ms > 0 ? window_ms : 40;
+    if (partner_dead_ms <= 0) partner_dead_ms = 3000;
+    if (partner_dead_ms < m->window_ms * 2)
+        partner_dead_ms = m->window_ms * 2; /* never tie to window skew */
+    if (partner_dead_ms > 300000) partner_dead_ms = 300000;
+    m->partner_dead_ms = partner_dead_ms;
+    /* Solo buffer may sit ~1 s at 1 Hz before emit rules fire; allow slack. */
+    int msmax = m->window_ms * 75;
+    if (msmax < 3000) msmax = 3000;
+    if (msmax > 180000) msmax = 180000;
+    m->max_stale_ms = msmax;
     if (pair_tol_ms < 1) pair_tol_ms = 50;
     if (pair_tol_ms > 250) pair_tol_ms = 250;
     m->pair_tol_s = pair_tol_ms / 1000.0;
@@ -116,6 +126,30 @@ int merger_poll_pair(merger_t *m, long now_ms,
     *na = *nb = 0;
     *have_a = *have_b = 0;
 
+    /* Too old to use at all (e.g. main loop blocked): drop silently */
+    if (m->a.valid && now_ms - m->a.ms_recv > m->max_stale_ms) {
+        m->a.valid = 0;
+        m->n_drop_abs_stale++;
+    }
+    if (m->b.valid && now_ms - m->b.ms_recv > m->max_stale_ms) {
+        m->b.valid = 0;
+        m->n_drop_abs_stale++;
+    }
+
+    /* Partner sleeping / link dead: drop only if that side has had no new RTCM
+     * for partner_dead_ms (not window_ms — skew between A and B can be 100–500 ms). */
+    if (m->a.valid && m->b.valid) {
+        long pd = (long)m->partner_dead_ms;
+        if (now_ms - m->a.ms_recv > pd) {
+            m->a.valid = 0;
+            m->n_drop_stale_recv++;
+        }
+        if (m->b.valid && now_ms - m->b.ms_recv > pd) {
+            m->b.valid = 0;
+            m->n_drop_stale_recv++;
+        }
+    }
+
     if (m->a.valid && m->b.valid) {
         double dt = fabs(timediff(m->a.time, m->b.time));
         if (dt <= m->pair_tol_s) {
@@ -126,7 +160,7 @@ int merger_poll_pair(merger_t *m, long now_ms,
             m->a.valid = m->b.valid = 0;
             return 1;
         }
-        /* Different epoch times: flush the older side as single. */
+        /* GPS-time mismatch: emit older epoch only; recv freshness already OK. */
         if (timediff(m->a.time, m->b.time) < 0) {
             *na = copy_buf(&m->a, out_a); *have_a = 1;
             *out_time = m->a.time;
@@ -142,6 +176,11 @@ int merger_poll_pair(merger_t *m, long now_ms,
     }
 
     if (m->a.valid && !m->b.valid && now_ms - m->a.ms_recv >= m->window_ms) {
+        if (now_ms - m->a.ms_recv > m->max_stale_ms) {
+            m->a.valid = 0;
+            m->n_drop_abs_stale++;
+            return 0;
+        }
         *na = copy_buf(&m->a, out_a); *have_a = 1;
         *out_time = m->a.time;
         m->n_a_only++;
@@ -149,6 +188,11 @@ int merger_poll_pair(merger_t *m, long now_ms,
         return 1;
     }
     if (m->b.valid && !m->a.valid && now_ms - m->b.ms_recv >= m->window_ms) {
+        if (now_ms - m->b.ms_recv > m->max_stale_ms) {
+            m->b.valid = 0;
+            m->n_drop_abs_stale++;
+            return 0;
+        }
         *nb = copy_buf(&m->b, out_b); *have_b = 1;
         *out_time = m->b.time;
         m->n_b_only++;
