@@ -61,6 +61,9 @@ typedef struct {
 typedef struct {
     epoch_buf_t a, b;
     int         window_ms;
+    /* Max |time_A - time_B| (s) to treat A/B as the same epoch for dual merge.
+     * Larger values reduce A-only/B-only ping-pong when streams have timing skew. */
+    double      pair_tol_s;
 
     /* Carrier-alignment state per (sat, freq slot). The slot index is the
      * index inside obsd_t::L; we additionally validate `code` to make sure
@@ -83,10 +86,11 @@ typedef struct {
 
     long        n_b_norm_applied;
     long        n_b_unaligned_lli;
-    long        n_switch_blocked;   /* SNR said B but B was unaligned */
+    long        n_b_prop_nodopp;   /* B signals skipped in propagation: D==0 & dt significant */
 } merger_t;
 
-void merger_init(merger_t *m, int window_ms);
+/* pair_tol_ms: max A/B obs time difference for paired merge (1–250 ms, default 50). */
+void merger_init(merger_t *m, int window_ms, int pair_tol_ms);
 
 /* Stash the obs arriving on channel A (side==0) or B (side==1).
  * Overwrites any stale epoch without consuming. */
@@ -118,6 +122,7 @@ int  merger_poll_pair(merger_t *m, long now_ms,
 int  merger_align_and_merge(merger_t *m,
                             const obsd_t *obs_a, int na, int have_a,
                             const obsd_t *obs_b, int nb, int have_b,
+                            gtime_t pair_time,
                             obsd_t *out_obs);
 
 #ifdef __cplusplus

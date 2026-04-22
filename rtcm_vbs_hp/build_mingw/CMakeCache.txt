@@ -87,8 +87,8 @@ CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/rtcm_vbs_hp
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/ld.lld.exe
 
-//No help, variable specified on the command line.
-CMAKE_MAKE_PROGRAM:UNINITIALIZED=C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/mingw32-make.exe
+//Path to a program.
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/Users/lenovo/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20260407-ucrt-x86_64/bin/mingw32-make.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -307,6 +307,8 @@ CMAKE_HOME_DIRECTORY:INTERNAL=E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //Name of CMakeLists files to read
 CMAKE_LIST_FILE_NAME:INTERNAL=CMakeLists.txt
+//ADVANCED property for variable: CMAKE_MAKE_PROGRAM
+CMAKE_MAKE_PROGRAM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
 CMAKE_MODULE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_DEBUG

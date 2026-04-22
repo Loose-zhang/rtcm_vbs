@@ -6,18 +6,87 @@
 #include <math.h>
 
 /* Tunables ----------------------------------------------------------------- */
-#define INIT_TOL_CYC      0.15   /* per-sample stability during init     */
-#define UPDATE_TOL_CYC    0.15   /* IIR-update gating tolerance          */
-#define IIR_ALPHA         0.05   /* bias = (1-a)*bias + a*diff           */
-#define INIT_NEEDED       3      /* consecutive stable samples to lock   */
-#define RESET_RESID_CYC   0.75   /* abs(diff - bias) larger than this    */
-#define RESET_GAP_S       5.0    /* pair gap larger than this resets     */
-#define SNR_HYSTERESIS    2000   /* obsd_t SNR is in 0.001 dBHz          */
+#define INIT_TOL_CYC      0.20   /* per-sample stability during init     */
+#define UPDATE_TOL_CYC    0.30   /* IIR-update gating tolerance          */
+#define IIR_ALPHA         0.10   /* bias = (1-a)*bias + a*diff  (faster) */
+#define INIT_NEEDED       5      /* consecutive stable samples to lock   */
+#define RESET_RESID_CYC   3.00   /* abs(diff - bias) larger than this    */
+#define RESET_GAP_S       10.0   /* pair gap larger than this resets     */
+#define PROP_DT_THRESH_S  0.001  /* skip Doppler propagation below 1 ms  */
+#define PROP_DT_MAX_S     0.300  /* refuse propagation beyond 300 ms     */
 
-void merger_init(merger_t *m, int window_ms)
+/* Propagate one B obs epoch from its own timestamp to target time t_ref.
+ *
+ * For each signal slot with valid Doppler:
+ *   L(t_ref) = L(t_B) + D * dt          [cycles, D in Hz = cycles/s]
+ *   P(t_ref) = P(t_B) - D*(c/f) * dt    [metres]
+ *
+ * RTKLIB Doppler sign: D>0 means satellite is approaching (decreasing range),
+ * so carrier phase increases and pseudorange decreases with time.
+ *
+ * If Doppler is zero (MSM4, or not decoded) and |dt| > PROP_DT_THRESH_S the
+ * signal cannot be reliably propagated; LLI_SLIP is set and the counter
+ * n_b_prop_nodopp is incremented so the caller can monitor the situation.
+ *
+ * The obs time field is set to t_ref after propagation. */
+static void propagate_b_to_ref(merger_t *m, obsd_t *ob, gtime_t t_ref)
+{
+    double dt = timediff(t_ref, ob->time);  /* t_ref - t_B, seconds */
+    ob->time = t_ref;
+
+    if (fabs(dt) < PROP_DT_THRESH_S) return;  /* negligible: skip */
+
+    if (fabs(dt) > PROP_DT_MAX_S) {
+        /* Gap too large: suppress all carrier signals to avoid
+         * false cycle-slip storms after long timing discontinuities. */
+        for (int j = 0; j < NFREQ+NEXOBS; j++) {
+            if (ob->L[j] != 0.0) {
+                ob->L[j]  = 0.0;
+                ob->LLI[j] = 0;
+            }
+        }
+        return;
+    }
+
+    int sys = satsys(ob->sat, NULL);
+    /* GLO FCN is stored as freq+7 (0-13, offset 7 → FCN -7..+6) */
+    int fcn = (sys == SYS_GLO) ? (int)ob->freq - 7 : 0;
+
+    for (int j = 0; j < NFREQ+NEXOBS; j++) {
+        unsigned char code = ob->code[j];
+        if (!code) continue;
+
+        double freq = code2freq(sys, code, fcn);
+        if (freq <= 0.0) continue;
+
+        double D = (double)ob->D[j];  /* Hz (cycles/s) */
+
+        if (D == 0.0) {
+            /* No Doppler available: cannot propagate reliably.
+             * Zero out L to silently suppress this signal rather than
+             * injecting LLI_SLIP which forces an RTK ambiguity reset. */
+            if (ob->L[j] != 0.0) {
+                ob->L[j]  = 0.0;
+                ob->LLI[j] = 0;
+                m->n_b_prop_nodopp++;
+            }
+            continue;
+        }
+
+        if (ob->L[j] != 0.0)
+            ob->L[j] += D * dt;
+        if (ob->P[j] != 0.0)
+            ob->P[j] -= D * (CLIGHT / freq) * dt;
+    }
+}
+
+void merger_init(merger_t *m, int window_ms, int pair_tol_ms)
 {
     memset(m, 0, sizeof(*m));
     m->window_ms = window_ms > 0 ? window_ms : 40;
+    if (pair_tol_ms < 1) pair_tol_ms = 50;
+    if (pair_tol_ms > 250) pair_tol_ms = 250;
+    m->pair_tol_s = pair_tol_ms / 1000.0;
 }
 
 void merger_stash(merger_t *m, int side,
@@ -49,7 +118,7 @@ int merger_poll_pair(merger_t *m, long now_ms,
 
     if (m->a.valid && m->b.valid) {
         double dt = fabs(timediff(m->a.time, m->b.time));
-        if (dt <= 0.010) {
+        if (dt <= m->pair_tol_s) {
             *na = copy_buf(&m->a, out_a); *have_a = 1;
             *nb = copy_buf(&m->b, out_b); *have_b = 1;
             *out_time = m->a.time;
@@ -87,17 +156,6 @@ int merger_poll_pair(merger_t *m, long now_ms,
         return 1;
     }
     return 0;
-}
-
-/* avg SNR across non-empty signals */
-static double avg_snr(const obsd_t *o)
-{
-    double sum = 0.0;
-    int    cnt = 0;
-    for (int j = 0; j < NFREQ+NEXOBS; j++) {
-        if (o->SNR[j] > 0) { sum += (double)o->SNR[j]; cnt++; }
-    }
-    return cnt > 0 ? sum / cnt : -1.0;
 }
 
 /* Find the slot index in obs[] for the same (sat,code). Returns -1 if not. */
@@ -228,8 +286,10 @@ static int normalise_b(merger_t *m, obsd_t *ob)
             n_norm++;
             m->n_b_norm_applied++;
         } else if (has_history) {
-            ob->L[j] = 0.0;
-            ob->D[j] = 0.0;
+            /* Alignment known but not yet valid: suppress L silently.
+             * RTK tolerates missing phase far better than repeated
+             * LLI_SLIP which forces ambiguity resets every epoch. */
+            ob->L[j]  = 0.0;
             ob->LLI[j] = 0;
             m->n_b_unaligned_lli++;
         }
@@ -240,25 +300,40 @@ static int normalise_b(merger_t *m, obsd_t *ob)
 int merger_align_and_merge(merger_t *m,
                            const obsd_t *obs_a, int na, int have_a,
                            const obsd_t *obs_b, int nb, int have_b,
+                           gtime_t pair_time,
                            obsd_t *out_obs)
 {
     int out_n = 0;
 
-    /* Phase 1: update bias state for every sat present on both sides. */
+    /* Phase 1: propagate B obs to A epoch, then update per-(sat,code) bias
+     * state for every satellite present on both sides.
+     *
+     * We work on a propagated copy of obs_b so that the bias estimate is
+     * computed between two obs sets that refer to the same epoch (pair_time),
+     * matching what will actually be emitted in the output. */
+    obsd_t obs_b_prop[MAXOBS];
+    int    nb_prop = 0;
+    if (have_b) {
+        nb_prop = nb > MAXOBS ? MAXOBS : nb;
+        memcpy(obs_b_prop, obs_b, nb_prop * sizeof(obsd_t));
+        for (int i = 0; i < nb_prop; i++)
+            propagate_b_to_ref(m, &obs_b_prop[i], pair_time);
+    }
+
     if (have_a && have_b) {
         for (int i = 0; i < na; i++) {
             int sat = obs_a[i].sat;
             int sat_idx = sat - 1;
             if (sat_idx < 0 || sat_idx >= MAXSAT) continue;
             const obsd_t *ob = NULL;
-            for (int j = 0; j < nb; j++) {
-                if (obs_b[j].sat == sat) { ob = &obs_b[j]; break; }
+            for (int j = 0; j < nb_prop; j++) {
+                if (obs_b_prop[j].sat == sat) { ob = &obs_b_prop[j]; break; }
             }
             if (!ob) continue;
             for (int slot_a = 0; slot_a < NFREQ+NEXOBS; slot_a++) {
                 if (obs_a[i].L[slot_a] == 0.0) continue;
                 if (!obs_a[i].code[slot_a]) continue;
-                update_one(m, sat_idx, slot_a, &obs_a[i], ob, obs_a[i].time);
+                update_one(m, sat_idx, slot_a, &obs_a[i], ob, pair_time);
             }
         }
     }
@@ -271,21 +346,23 @@ int merger_align_and_merge(merger_t *m,
         return out_n;
     }
     if (have_b && !have_a) {
-        for (int i = 0; i < nb && out_n < MAXOBS; i++) {
-            out_obs[out_n] = obs_b[i];
+        /* B-only epoch: obs already propagated to pair_time in obs_b_prop. */
+        for (int i = 0; i < nb_prop && out_n < MAXOBS; i++) {
+            out_obs[out_n] = obs_b_prop[i];
             normalise_b(m, &out_obs[out_n]);
             out_n++;
         }
         return out_n;
     }
 
-    /* Both present: keep A as the phase reference for shared satellites. */
+    /* Both present: A sats first (A is primary), then B-only supplemental sats.
+     * B supplemental sats use the propagated copy (already at pair_time). */
     unsigned char used_b[MAXOBS] = {0};
     for (int i = 0; i < na && out_n < MAXOBS; i++) {
         int sat = obs_a[i].sat;
         int bi  = -1;
-        for (int j = 0; j < nb; j++) {
-            if (obs_b[j].sat == sat) { bi = j; break; }
+        for (int j = 0; j < nb_prop; j++) {
+            if (obs_b_prop[j].sat == sat) { bi = j; break; }
         }
         if (bi < 0) {
             out_obs[out_n++] = obs_a[i];
@@ -294,14 +371,15 @@ int merger_align_and_merge(merger_t *m,
         used_b[bi] = 1;
         m->n_both++;
 
-        /* Shared satellite: always keep A to avoid per-satellite A/B switching. */
+        /* Shared satellite: always keep A. */
         out_obs[out_n] = obs_a[i];
         m->n_chose_a++;
         out_n++;
     }
-    for (int j = 0; j < nb && out_n < MAXOBS; j++) {
+    /* B-only supplemental sats: propagated to pair_time, then normalise. */
+    for (int j = 0; j < nb_prop && out_n < MAXOBS; j++) {
         if (used_b[j]) continue;
-        out_obs[out_n] = obs_b[j];
+        out_obs[out_n] = obs_b_prop[j];
         normalise_b(m, &out_obs[out_n]);
         m->n_chose_b++;
         out_n++;
