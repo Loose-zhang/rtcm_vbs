@@ -4,15 +4,20 @@
  * First-stage model for long-baseline VBS enhancement:
  *   - Works with the existing dual-base A/B architecture.
  *   - Builds a per-satellite residual difference between base A and base B.
- *   - Interpolates that residual to the VBS position along the A-B baseline.
+ *   - Interpolates that residual to the VBS position with inverse-distance
+ *     weights from VBS to A/B. When geometry is usable, the residual is first
+ *     normalised by an ionosphere mapping function and then mapped back to the
+ *     VBS direction.
  *
  * The residual is formed in measurement space after subtracting pure geometry:
  *
  *   res = (P_B - P_A) - (rho_B - rho_A)
  *
  * so the remaining term is dominated by spatially varying atmosphere,
- * especially ionosphere over longer baselines. The interpolated residual is
- * then added on top of the existing geometric/trop VBS correction.
+ * especially ionosphere over longer baselines. If troposphere correction is
+ * also active, the inter-base troposphere component is removed before
+ * interpolation so it is not applied twice. The interpolated residual is then
+ * added on top of the existing geometric/trop VBS correction.
  *----------------------------------------------------------------------------*/
 #ifndef NET_INTERP_H
 #define NET_INTERP_H

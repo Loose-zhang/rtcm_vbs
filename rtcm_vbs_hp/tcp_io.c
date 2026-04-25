@@ -22,6 +22,7 @@
 #else
   #include <sys/types.h>
   #include <sys/socket.h>
+  #include <sys/select.h>
   #include <arpa/inet.h>
   #include <netinet/in.h>
   #include <netinet/tcp.h>
@@ -45,6 +46,50 @@ static void tcp_init(void)
 #endif
 }
 
+static int connect_in_progress(void)
+{
+#ifdef _WIN32
+    int e = WSAGetLastError();
+    return e == WSAEWOULDBLOCK || e == WSAEINPROGRESS || e == WSAEINVAL;
+#else
+    return errno == EINPROGRESS || errno == EALREADY || errno == EWOULDBLOCK;
+#endif
+}
+
+static int read_would_block(void)
+{
+#ifdef _WIN32
+    int e = WSAGetLastError();
+    return e == WSAEWOULDBLOCK || e == WSAEINTR;
+#else
+    return errno == EAGAIN || errno == EWOULDBLOCK || errno == EINTR;
+#endif
+}
+
+static int wait_connect_done(int fd, int timeout_ms)
+{
+    fd_set wfds;
+    struct timeval tv;
+    FD_ZERO(&wfds);
+    FD_SET((unsigned)fd, &wfds);
+    tv.tv_sec = timeout_ms / 1000;
+    tv.tv_usec = (timeout_ms % 1000) * 1000;
+
+    int r = select(fd + 1, NULL, &wfds, NULL, &tv);
+    if (r <= 0) return -1;
+
+    int err = 0;
+#ifdef _WIN32
+    int len = sizeof(err);
+#else
+    socklen_t len = sizeof(err);
+#endif
+    if (getsockopt(fd, SOL_SOCKET, SO_ERROR, (char *)&err, &len) < 0) {
+        return -1;
+    }
+    return err == 0 ? 0 : -1;
+}
+
 /* ---- client -------------------------------------------------------------- */
 int tcpc_connect(tcp_client_t *c, const char *host, int port)
 {
@@ -56,6 +101,7 @@ int tcpc_connect(tcp_client_t *c, const char *host, int port)
 
     int s = (int)socket(AF_INET, SOCK_STREAM, 0);
     if (s < 0) return -1;
+    SET_NONBLOCK(s);
 
     struct sockaddr_in addr;
     memset(&addr, 0, sizeof(addr));
@@ -65,7 +111,9 @@ int tcpc_connect(tcp_client_t *c, const char *host, int port)
         close_sock(s); return -1;
     }
     if (connect(s, (struct sockaddr*)&addr, sizeof(addr)) < 0) {
-        close_sock(s); return -1;
+        if (!connect_in_progress() || wait_connect_done(s, 20) < 0) {
+            close_sock(s); return -1;
+        }
     }
 
     int one = 1;
@@ -79,7 +127,7 @@ int tcpc_read(tcp_client_t *c, void *buf, size_t n)
     if (c->fd < 0) return -1;
     int r = (int)recv(c->fd, (char*)buf, (int)n, 0);
     if (r == 0) return 0;
-    if (r < 0) return -1;
+    if (r < 0) return read_would_block() ? TCPC_AGAIN : -1;
     return r;
 }
 

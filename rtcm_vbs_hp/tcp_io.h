@@ -10,7 +10,9 @@
 extern "C" {
 #endif
 
-/* ---- TCP client (blocking, auto-reconnect in main loop) ------------------ */
+/* ---- TCP client (non-blocking, auto-reconnect in main loop) -------------- */
+#define TCPC_AGAIN (-2)
+
 typedef struct {
     int  fd;
     char host[128];
@@ -18,7 +20,7 @@ typedef struct {
 } tcp_client_t;
 
 int  tcpc_connect(tcp_client_t *c, const char *host, int port);
-int  tcpc_read   (tcp_client_t *c, void *buf, size_t n);  /* >0 bytes / 0 EOF / -1 err */
+int  tcpc_read   (tcp_client_t *c, void *buf, size_t n);  /* >0 bytes / 0 EOF / TCPC_AGAIN no data / -1 err */
 void tcpc_close  (tcp_client_t *c);
 
 /* ---- TCP broadcast server (1..N simultaneous receivers) ------------------ */

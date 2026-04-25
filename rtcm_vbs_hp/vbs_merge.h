@@ -13,9 +13,11 @@
  *                                 update the per-(sat,code) B->A carrier
  *                                 bias state, normalise B's carrier phases
  *                                 into A's reference frame, and merge them
- *                                 with continuity-aware policy. Sets LLI
- *                                 cycle-slip on signals whose alignment is
- *                                 not (yet) trusted.
+ *                                 with an A-priority policy: shared
+ *                                 satellites keep A as the phase reference,
+ *                                 while B supplies satellites missing from A.
+ *                                 Sets LLI cycle-slip on signals whose
+ *                                 alignment is not (yet) trusted.
  *
  * The bias state lives inside merger_t and is keyed by (sat-1, signal code)
  * so that different signal layouts on A and B do not get aligned to each
@@ -72,8 +74,8 @@ typedef struct {
     long        n_a_only;       /* epochs emitted with A only            */
     long        n_b_only;       /* epochs emitted with B only            */
     long        n_both;         /* sat counts where both A and B had it  */
-    long        n_chose_a;
-    long        n_chose_b;
+    long        n_chose_a;      /* shared sats kept from A               */
+    long        n_chose_b;      /* B-only sats appended                  */
 
     long        n_align_init_ok;
     long        n_align_reset_slip;
@@ -83,7 +85,7 @@ typedef struct {
 
     long        n_b_norm_applied;
     long        n_b_unaligned_lli;
-    long        n_switch_blocked;   /* SNR said B but B was unaligned */
+    long        n_switch_blocked;   /* reserved for older SNR-switch policy */
 } merger_t;
 
 void merger_init(merger_t *m, int window_ms);
