@@ -23,6 +23,7 @@
 10. [常见问题](#10-常见问题)
 11. [当前限制](#11-当前限制)
 12. [代码结构](#12-代码结构)
+13. [设计与修复记录](#13-设计与修复记录)
 
 ---
 
@@ -413,6 +414,167 @@ rtcm_vbs_hp/
 | `ecef2pos() / pos2ecef()` | 大地坐标 ⇄ ECEF |
 | `enu2ecef()` | NED 偏移 → ECEF 平移向量 |
 | `sat2freq()` | 每颗卫星-每信号的精确载波频率（含 GLONASS FCN） |
+
+---
+
+## 13. 设计与修复记录
+
+本节合并原独立修复文档中的长期有用信息，便于后续只维护 `README.md`。
+
+### 13.1 网络/电离层插值修复
+
+`net_interp_build_dual()` 的输入是 A/B 同历元同卫星的首个有效伪距，基础残差为：
+
+```text
+dres = (P_B - P_A) - (rho_B - rho_A)
+```
+
+该残差用于估计 A→B 方向上的空间相关误差，主要面向长基线下的电离层差异。当前实现包含三个关键修正。
+
+**对流层重复改正避免**
+
+当 `--iono` 与 `--trop` 同时开启时，`dres` 中天然包含 A/B 站间对流层差 `trop(B) - trop(A)`。而 `vbs_core.c` 后续还会分别对 A 或 B 观测施加 `trop(VBS) - trop(base)`。为避免对流层项重复进入 `dnet`，当前实现会在插值前从 `dres` 中减去站间对流层差：
+
+```c
+if (vbs->apply_trop) {
+    double ta = tropmodel(oa->time, pos_a, azel_a, vbs->humi);
+    double tb = tropmodel(ob->time, pos_b, azel_b, vbs->humi);
+    dres -= (tb - ta);
+}
+```
+
+因此 `--dual --iono --trop` 可以一起使用：对流层由 `vbs_core.c` 负责，`net_interp.c` 输出更接近电离层/空间残差的补偿。
+
+**距离反比权重替代一维基线投影**
+
+旧思路按 VBS 在 A→B 连线上的投影比例插值。当前实现改为使用 VBS 到 A/B 两站的 3D 距离反比权重：
+
+```text
+wa = (1 / dist(VBS,A)) / ((1 / dist(VBS,A)) + (1 / dist(VBS,B)))
+wb = (1 / dist(VBS,B)) / ((1 / dist(VBS,A)) + (1 / dist(VBS,B)))
+```
+
+`wa + wb = 1`，自然限定在 `[0, 1]`。以 A 站为参考零点时，VBS 侧附加修正的基础形式为 `corr = wb * dres`。
+
+**电离层映射函数归一化**
+
+电离层延迟是斜路径量，受卫星仰角影响。当前实现用 RTKLIB 的 `ionmapf()` 将 A/B 残差近似归一到天顶域，再映射回 VBS 方向：
+
+```c
+double mf_a = ionmapf(pos_a, azel_a);
+double mf_b = ionmapf(pos_b, azel_b);
+double mf_mean = 0.5 * (mf_a + mf_b);
+double dres_vtec = dres / mf_mean;
+double mf_v = wa * mf_a + wb * mf_b;
+double corr = wb * dres_vtec * mf_v;
+```
+
+若映射因子异常或低仰角风险过高，代码退化为 `corr = wb * dres`，避免把低仰角噪声放大。
+
+使用建议：
+
+| 启动参数组合 | 说明 |
+|---|---|
+| `--dual --iono` | 使用双站残差插值，不额外做显式对流层差分 |
+| `--dual --iono --trop` | 推荐用于较长基线或高差明显场景；当前实现已避免对流层重复改正 |
+| 基线 < 50 km | IDW + 映射函数修正通常更稳 |
+| 基线 > 50 km | 双站模型可能不够，应考虑 3/4 站二维网络模型 |
+
+### 13.2 双基站载波相位对齐
+
+双站 VBS 的主要风险不是几何改正，而是 A/B 两台真实接收机的载波相位各自包含不同接收机偏差和模糊度。若逐卫星在 A/B 之间直接切换，输出 `L` 可能出现几百周量级台阶，RTK 滤波会长期无法固定。
+
+当前双站数据流为：
+
+```text
+A/B 原始 obs
+   -> merger_poll_pair() 返回两侧原始历元
+   -> 分别 vbs_correct_obs_ex(side=0/1) 修正到 VBS 几何位置
+   -> merger_align_and_merge() 更新 B->A 载波偏置、归一化 B、合并输出
+   -> emit_msm()
+```
+
+`merger_t` 内维护：
+
+```c
+align_state_t align[MAXSAT][NFREQ + NEXOBS];
+```
+
+状态按 `(sat-1, signal code)` 约束，避免 A/B 信号槽顺序不一致时错配。共同卫星、共同信号可见时计算：
+
+```text
+diff_cyc = L_A_vbs - L_B_vbs
+```
+
+偏置状态规则：
+
+| 阶段 | 条件 | 动作 |
+|---|---|---|
+| 初始化 | 连续 3 次 `diff` 相对均值稳定在 0.15 cycle 内 | 锁定 `bias_cyc`，置 `valid=1` |
+| 跟踪 | `diff - bias` 在 0.15 cycle 内 | 用 0.05 IIR 系数慢速更新 bias |
+| reset | A/B 任一侧 LLI 标记周跳 | 清空状态 |
+| reset | 信号码变化 | 清空状态 |
+| reset | 配对中断超过 5 s | 清空状态 |
+| reset | 残差超过 0.75 cycle | 清空状态 |
+
+B 侧载波输出策略：
+
+| 情况 | 处理 |
+|---|---|
+| `bias valid` | `L += bias_cyc`，把 B 载波归一到 A 参考系 |
+| 有历史但当前无有效 bias | 清零该信号的 `L/D`，只保留伪距，避免注入不连续相位 |
+| 从未有 A/B 重叠历史 | 保留 B 原始 `L/D`，支持 B-only 星座独立固定 |
+
+B 的伪距不叠加载波偏置；伪距和载波接收机硬件偏差不是同一个物理量，不能共用一个 cycle 偏置。
+
+### 13.3 A 主站 + B 补星策略
+
+当前双站合并的目标是：A 持续播发时保持 A 的相位连续性；B 休眠、断开或仅提供部分星座时，不阻塞 A；A 缺星时由 B 补充可用卫星。
+
+最终策略：
+
+| 场景 | 输出行为 |
+|---|---|
+| A/B 共同可见同一卫星 | 固定使用 A，B 只用于更新相位对齐状态 |
+| A 有、B 无 | 输出 A |
+| A 无、B 有且 bias valid | 输出归一化后的 B |
+| A 无、B 有但该信号曾重叠且 bias 当前无效 | 仅输出 B 的伪距，不输出不可信载波 |
+| B-only 星座从未与 A 重叠 | 保留 B 的原始载波；该星座可在 rover 侧独立固定 |
+| A/B 时间差 > 10 ms | 先输出较旧的一侧，不强行等待 |
+| 单侧休眠超过 `--window` | 输出仍在线的一侧 |
+
+这种策略刻意取消了共享卫星按 SNR 在 A/B 间切换，优先保护载波相位连续性。
+
+### 13.4 多输入流容错
+
+上游 TCP client 当前为非阻塞读取：
+
+| 情况 | 处理 |
+|---|---|
+| 某通道暂无数据 | `tcpc_read()` 返回 `TCPC_AGAIN`，主循环继续处理其他通道 |
+| eph 中断 | 使用已经缓存到 `rout.nav` 的星历继续处理观测；新星历恢复后继续镜像 |
+| ssr 中断 | 停止 SSR 透传，但观测流继续 |
+| B 休眠或断开 | A-only 按窗口超时持续输出 |
+| A 断开、B 正常 | B-only 输出；若 B 站坐标已学习，输出站号和 VBS 1006 会跟随 B 侧切换 |
+| 真实断线 | 关闭 socket，并按 1 秒退避重连 |
+
+连接尝试使用短超时，避免 eph/ssr/B 长期不可达时拖慢主观测流。
+
+### 13.5 验证建议
+
+基础验证：
+
+```bash
+cmake --build build -j
+```
+
+运行验证建议：
+
+1. 单站回归：`--offset 3000 3000 30 --trop`，确认仍可稳定输出和固定。
+2. 双站基础：`--dual --offset 3000 3000 30 --trop`，观察 `epochs merged / A-only / B-only`。
+3. 双站 + 插值：`--dual --trop --iono`，观察 `iono epochs / pairs / interp / rej`，`rej` 不应持续飙升。
+4. 断流测试：分别断开 eph、ssr、A、B，确认仍在线观测流持续推送，并在恢复后自动重连。
+5. B 休眠测试：A 持续播发、B 间歇播发时，输出应在 merged / A-only 间自然切换。
 
 ---
 
