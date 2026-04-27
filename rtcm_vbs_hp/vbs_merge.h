@@ -14,12 +14,12 @@
  *                           A's epoch time before output.
  *   3. merger_align_and_merge() : given the two VBS-corrected obs sets,
  *                                 update the per-(sat,code) B->A carrier
- *                                 bias state and emit an A-master observation
- *                                 stream. Shared satellites keep A as the
- *                                 phase reference, and B-only observations
- *                                 are not appended to the outbound MSM.
- *                                 Sets LLI cycle-slip on signals whose
- *                                 alignment is not (yet) trusted.
+ *                                 bias state and emit one virtual-reference
+ *                                 observation stream. Shared satellites keep
+ *                                 A as the phase reference. B-only satellites
+ *                                 are appended only after at least one carrier
+ *                                 phase slot is normalised to A; untrusted B
+ *                                 signal slots are suppressed completely.
  *
  * The bias state lives inside merger_t and is keyed by (sat-1, signal code)
  * so that different signal layouts on A and B do not get aligned to each
@@ -65,6 +65,8 @@ typedef struct {
 typedef struct {
     epoch_buf_t a, b;
     int         window_ms;
+    long        last_obs_ms[2];
+    int         align_gap_reset_ms;
 
     /* Carrier-alignment state per (sat, freq slot). The slot index is the
      * index inside obsd_t::L; we additionally validate `code` to make sure
@@ -77,7 +79,7 @@ typedef struct {
     long        n_b_only;       /* epochs emitted with B only            */
     long        n_both;         /* sat counts where both A and B had it  */
     long        n_chose_a;      /* shared sats kept from A               */
-    long        n_chose_b;      /* reserved for old B-append policy      */
+    long        n_chose_b;      /* B-only sats appended after alignment  */
 
     long        n_align_init_ok;
     long        n_align_reset_slip;
@@ -114,10 +116,11 @@ int  merger_poll_pair(merger_t *m, long now_ms,
                       gtime_t *out_time);
 
 /* Take two already VBS-corrected obs sets (either may be empty) and
- * produce the final A-master obs set. B is used to update the per-(sat,code)
- * bias state when both sides observe the same satellite/signal, but B-only
- * observations are not emitted. This keeps the outbound MSM carrier stream
- * stable for rovers that expect one physical reference receiver.
+ * produce the final VBS obs set. B is used to update the per-(sat,code)
+ * bias state when both sides observe the same satellite/signal. B-only
+ * observations are emitted only after B carrier phases are normalised to A's
+ * carrier reference. B-only epochs are dropped, and unaligned B signal slots
+ * are zeroed so the outbound MSM remains a single coherent VBS stream.
  *
  * Returns the number of obs written to out_obs. */
 int  merger_align_and_merge(merger_t *m,

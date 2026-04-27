@@ -18,12 +18,24 @@ void merger_init(merger_t *m, int window_ms)
 {
     memset(m, 0, sizeof(*m));
     m->window_ms = window_ms > 0 ? window_ms : 40;
+    m->align_gap_reset_ms = 10000;
+}
+
+static void clear_alignment(merger_t *m)
+{
+    memset(m->align, 0, sizeof(m->align));
 }
 
 void merger_stash(merger_t *m, int side,
                   const obsd_t *obs, int n, gtime_t t, long now_ms)
 {
     epoch_buf_t *buf = side == 0 ? &m->a : &m->b;
+    if (side >= 0 && side < 2 && m->last_obs_ms[side] > 0 &&
+        now_ms - m->last_obs_ms[side] > m->align_gap_reset_ms) {
+        clear_alignment(m);
+        m->n_align_reset_gap++;
+    }
+    if (side >= 0 && side < 2) m->last_obs_ms[side] = now_ms;
     if (n > MAXOBS) n = MAXOBS;
     memcpy(buf->data, obs, n * sizeof(obsd_t));
     buf->n       = n;
@@ -200,11 +212,9 @@ static int update_one(merger_t *m, int sat_idx, int slot_a,
     return st->valid ? 1 : 0;
 }
 
-/* Apply per-(sat,slot) bias to B's L[] when available.
- *
- * B observations are not appended to the outbound MSM stream. This helper is
- * kept for diagnostics/experiments, but the production A-master policy below
- * uses B only internally for alignment state and network residual modelling.
+/* Apply per-(sat,slot) bias to B's L[] when available. Untrusted signal slots
+ * are suppressed completely so a rover never sees code-only B observations
+ * mixed into A's carrier reference.
  */
 static int normalise_b(merger_t *m, obsd_t *ob)
 {
@@ -232,13 +242,24 @@ static int normalise_b(merger_t *m, obsd_t *ob)
             n_norm++;
             m->n_b_norm_applied++;
         } else {
+            ob->P[j] = 0.0;
             ob->L[j] = 0.0;
             ob->D[j] = 0.0;
+            ob->SNR[j] = 0;
+            ob->code[j] = 0;
             ob->LLI[j] = 0;
             if (has_history) m->n_b_unaligned_lli++;
         }
     }
     return n_norm;
+}
+
+static int has_carrier_phase(const obsd_t *o)
+{
+    for (int j = 0; j < NFREQ+NEXOBS; j++) {
+        if (o->L[j] != 0.0) return 1;
+    }
+    return 0;
 }
 
 int merger_align_and_merge(merger_t *m,
@@ -278,7 +299,8 @@ int merger_align_and_merge(merger_t *m,
         return 0;
     }
 
-    /* Both present: keep A as the phase reference for shared satellites. */
+    /* Both present: keep A as the phase reference for shared satellites and
+     * append B-only satellites after carrier normalisation. */
     for (int i = 0; i < na && out_n < MAXOBS; i++) {
         int sat = obs_a[i].sat;
         int bi  = -1;
@@ -289,6 +311,19 @@ int merger_align_and_merge(merger_t *m,
         out_obs[out_n] = obs_a[i];
         m->n_chose_a++;
         out_n++;
+    }
+    for (int i = 0; i < nb && out_n < MAXOBS; i++) {
+        int sat = obs_b[i].sat;
+        int ai = -1;
+        for (int j = 0; j < na; j++) {
+            if (obs_a[j].sat == sat) { ai = j; break; }
+        }
+        if (ai >= 0) continue;
+        obsd_t ob = obs_b[i];
+        normalise_b(m, &ob);
+        if (!has_carrier_phase(&ob)) continue;
+        out_obs[out_n++] = ob;
+        m->n_chose_b++;
     }
     return out_n;
 }

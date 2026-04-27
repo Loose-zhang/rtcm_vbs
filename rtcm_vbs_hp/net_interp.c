@@ -59,10 +59,12 @@ int net_interp_build_dual(net_interp_t *ni,
                           const rtcm_t *rtcm_nav_src,
                           const obsd_t *obs_a, int na,
                           const obsd_t *obs_b, int nb,
-                          double *sat_extra_m)
+                          double *sat_extra_a,
+                          double *sat_extra_b)
 {
-    if (!ni || !sat_extra_m) return 0;
-    memset(sat_extra_m, 0, sizeof(double) * MAXSAT);
+    if (!ni || (!sat_extra_a && !sat_extra_b)) return 0;
+    if (sat_extra_a) memset(sat_extra_a, 0, sizeof(double) * MAXSAT);
+    if (sat_extra_b) memset(sat_extra_b, 0, sizeof(double) * MAXSAT);
 
     if (!ni->enable || !vbs || !rtcm_nav_src) return 0;
     if (!vbs->base_valid[0] || !vbs->base_valid[1]) return 0;
@@ -153,19 +155,23 @@ int net_interp_build_dual(net_interp_t *ni,
         double mf_b = ionmapf(pos_b, azel_b);
         double mf_mean = 0.5 * (mf_a + mf_b);
 
-        double corr;
+        double corr_v;
         if (mf_mean > 1e-3 && mf_a > 1e-3 && mf_b > 1e-3 &&
             mf_a < 5.0 && mf_b < 5.0) {
             double dres_vtec = dres / mf_mean;
             double mf_v = wa * mf_a + wb * mf_b;
-            corr = wb * dres_vtec * mf_v;
+            corr_v = wb * dres_vtec * mf_v;
         } else {
             /* Fix 2 only (fallback for extreme geometry): IDW without
              * ionosphere normalisation. */
-            corr = wb * dres;
+            corr_v = wb * dres;
         }
 
-        sat_extra_m[oa->sat - 1] = corr;
+        /* residual(A) is the zero reference used by dres, residual(B)=dres.
+         * Convert the interpolated VBS residual into the additive correction
+         * needed by each real-base observation stream. */
+        if (sat_extra_a) sat_extra_a[oa->sat - 1] = corr_v;
+        if (sat_extra_b) sat_extra_b[oa->sat - 1] = corr_v - dres;
         ni->n_sat_pairs++;
         ni->n_sat_interp++;
         out++;
