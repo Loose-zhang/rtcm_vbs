@@ -118,6 +118,11 @@ int tcpc_connect(tcp_client_t *c, const char *host, int port)
 
     int one = 1;
     setsockopt(s, IPPROTO_TCP, TCP_NODELAY, (const char*)&one, sizeof(one));
+    {
+        int rbsz = 4 * 1024 * 1024; /* avoid slow consumer stalling the sender (esp. multi-channel) */
+        setsockopt(s, SOL_SOCKET, SO_RCVBUF, (const char *)&rbsz, (int)sizeof(rbsz));
+    }
+    setsockopt(s, SOL_SOCKET, SO_KEEPALIVE, (const char *)&one, sizeof(one));
     c->fd = s;
     return 0;
 }
