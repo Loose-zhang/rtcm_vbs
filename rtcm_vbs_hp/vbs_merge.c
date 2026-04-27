@@ -39,6 +39,11 @@ static int copy_buf(const epoch_buf_t *src, obsd_t *out)
     return n;
 }
 
+static void set_obs_time(obsd_t *obs, int n, gtime_t t)
+{
+    for (int i = 0; i < n; i++) obs[i].time = t;
+}
+
 int merger_poll_pair(merger_t *m, long now_ms,
                      obsd_t *out_a, int *na, int *have_a,
                      obsd_t *out_b, int *nb, int *have_b,
@@ -49,10 +54,13 @@ int merger_poll_pair(merger_t *m, long now_ms,
 
     if (m->a.valid && m->b.valid) {
         double dt = fabs(timediff(m->a.time, m->b.time));
-        if (dt <= 0.010) {
+        double pair_window_s = (double)m->window_ms / 1000.0;
+        if (dt <= pair_window_s) {
             *na = copy_buf(&m->a, out_a); *have_a = 1;
             *nb = copy_buf(&m->b, out_b); *have_b = 1;
             *out_time = m->a.time;
+            set_obs_time(out_a, *na, *out_time);
+            set_obs_time(out_b, *nb, *out_time);
             m->n_merged++;
             m->a.valid = m->b.valid = 0;
             return 1;
@@ -194,13 +202,9 @@ static int update_one(merger_t *m, int sat_idx, int slot_a,
 
 /* Apply per-(sat,slot) bias to B's L[] when available.
  *
- * Policy for B-only signals:
- *   1) If a valid B->A bias exists, normalise into A frame.
- *   2) If this (sat,code) has been seen in A/B overlap before but bias is
- *      currently invalid, suppress L/D to avoid injecting unstable phase.
- *   3) If this (sat,code) has never had A/B overlap history, keep original
- *      B-side L/D so independent-constellation fixing (e.g. BDS-only on B)
- *      remains possible.
+ * B observations are not appended to the outbound MSM stream. This helper is
+ * kept for diagnostics/experiments, but the production A-master policy below
+ * uses B only internally for alignment state and network residual modelling.
  */
 static int normalise_b(merger_t *m, obsd_t *ob)
 {
@@ -227,11 +231,11 @@ static int normalise_b(merger_t *m, obsd_t *ob)
             ob->L[j] += match->bias_cyc;
             n_norm++;
             m->n_b_norm_applied++;
-        } else if (has_history) {
+        } else {
             ob->L[j] = 0.0;
             ob->D[j] = 0.0;
             ob->LLI[j] = 0;
-            m->n_b_unaligned_lli++;
+            if (has_history) m->n_b_unaligned_lli++;
         }
     }
     return n_norm;
@@ -271,39 +275,19 @@ int merger_align_and_merge(merger_t *m,
         return out_n;
     }
     if (have_b && !have_a) {
-        for (int i = 0; i < nb && out_n < MAXOBS; i++) {
-            out_obs[out_n] = obs_b[i];
-            normalise_b(m, &out_obs[out_n]);
-            out_n++;
-        }
-        return out_n;
+        return 0;
     }
 
     /* Both present: keep A as the phase reference for shared satellites. */
-    unsigned char used_b[MAXOBS] = {0};
     for (int i = 0; i < na && out_n < MAXOBS; i++) {
         int sat = obs_a[i].sat;
         int bi  = -1;
         for (int j = 0; j < nb; j++) {
             if (obs_b[j].sat == sat) { bi = j; break; }
         }
-        if (bi < 0) {
-            out_obs[out_n++] = obs_a[i];
-            continue;
-        }
-        used_b[bi] = 1;
-        m->n_both++;
-
-        /* Shared satellite: always keep A to avoid per-satellite A/B switching. */
+        if (bi >= 0) m->n_both++;
         out_obs[out_n] = obs_a[i];
         m->n_chose_a++;
-        out_n++;
-    }
-    for (int j = 0; j < nb && out_n < MAXOBS; j++) {
-        if (used_b[j]) continue;
-        out_obs[out_n] = obs_b[j];
-        normalise_b(m, &out_obs[out_n]);
-        m->n_chose_b++;
         out_n++;
     }
     return out_n;

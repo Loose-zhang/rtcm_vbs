@@ -8,14 +8,16 @@
  *                           a wait window has elapsed and only one is left),
  *                           hand back the raw A and/or B obs sets so the
  *                           caller can run vbs_correct_obs_ex() on each
- *                           side independently.
+ *                           side independently. When A/B are both buffered,
+ *                           the configured window is used as the pairing
+ *                           tolerance and both copied sides are stamped to
+ *                           A's epoch time before output.
  *   3. merger_align_and_merge() : given the two VBS-corrected obs sets,
  *                                 update the per-(sat,code) B->A carrier
- *                                 bias state, normalise B's carrier phases
- *                                 into A's reference frame, and merge them
- *                                 with an A-priority policy: shared
- *                                 satellites keep A as the phase reference,
- *                                 while B supplies satellites missing from A.
+ *                                 bias state and emit an A-master observation
+ *                                 stream. Shared satellites keep A as the
+ *                                 phase reference, and B-only observations
+ *                                 are not appended to the outbound MSM.
  *                                 Sets LLI cycle-slip on signals whose
  *                                 alignment is not (yet) trusted.
  *
@@ -75,7 +77,7 @@ typedef struct {
     long        n_b_only;       /* epochs emitted with B only            */
     long        n_both;         /* sat counts where both A and B had it  */
     long        n_chose_a;      /* shared sats kept from A               */
-    long        n_chose_b;      /* B-only sats appended                  */
+    long        n_chose_b;      /* reserved for old B-append policy      */
 
     long        n_align_init_ok;
     long        n_align_reset_slip;
@@ -102,7 +104,8 @@ void merger_stash(merger_t *m, int side, const obsd_t *obs, int n,
  *   out_a[*na] / out_b[*nb] : raw obs copies (callers must run their own
  *                              VBS correction on each side before merging).
  *   *out_time            : epoch timestamp (A's if both, otherwise the
- *                          present side's).
+ *                          present side's). For paired epochs the returned
+ *                          observation copies are also stamped to this time.
  *
  * Returns 0 if nothing is ready yet. */
 int  merger_poll_pair(merger_t *m, long now_ms,
@@ -111,10 +114,10 @@ int  merger_poll_pair(merger_t *m, long now_ms,
                       gtime_t *out_time);
 
 /* Take two already VBS-corrected obs sets (either may be empty) and
- * produce the final merged obs set. B's carrier phases are normalised
- * into A's reference frame using the per-(sat,code) bias state, which
- * is updated in-place. Sets LLI cycle-slip on signals whose alignment
- * cannot be trusted this epoch.
+ * produce the final A-master obs set. B is used to update the per-(sat,code)
+ * bias state when both sides observe the same satellite/signal, but B-only
+ * observations are not emitted. This keeps the outbound MSM carrier stream
+ * stable for rovers that expect one physical reference receiver.
  *
  * Returns the number of obs written to out_obs. */
 int  merger_align_and_merge(merger_t *m,

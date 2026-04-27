@@ -76,450 +76,450 @@ CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm.c.obj: CMakeFil
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm2.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm2.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm2.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm2.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm2.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm2.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm2.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm2.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm2.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm2.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm2.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3e.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3e.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3e.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3e.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3e.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3e.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3e.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3e.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3e.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3e.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3e.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtcm3e.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtcm3e.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ephemeris.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ephemeris.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ephemeris.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/ephemeris.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ephemeris.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ephemeris.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ephemeris.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ephemeris.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ephemeris.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ephemeris.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ephemeris.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ephemeris.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ephemeris.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtkcmn.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtkcmn.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtkcmn.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/rtkcmn.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtkcmn.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtkcmn.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtkcmn.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtkcmn.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtkcmn.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtkcmn.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtkcmn.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/rtkcmn.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\rtkcmn.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/preceph.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/preceph.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/preceph.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/preceph.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/preceph.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/preceph.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/preceph.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/preceph.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/preceph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/preceph.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/preceph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/preceph.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\preceph.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/sbas.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/sbas.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/sbas.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/sbas.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/sbas.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/sbas.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/sbas.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/sbas.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/sbas.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/sbas.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/sbas.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/sbas.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\sbas.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/options.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/options.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/options.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/options.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/options.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/options.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/options.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/options.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/options.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/options.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/options.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/options.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\options.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/trace.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/trace.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/trace.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/trace.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/trace.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/trace.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/trace.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/trace.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/trace.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/trace.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/trace.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/trace.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\trace.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/tides.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/tides.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/tides.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/tides.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/tides.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/tides.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/tides.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/tides.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/tides.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/tides.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/tides.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/tides.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\tides.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ionex.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ionex.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ionex.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/ionex.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ionex.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ionex.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ionex.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ionex.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ionex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ionex.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ionex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/ionex.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\ionex.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/datum.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/datum.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/datum.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/datum.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/datum.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/datum.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/datum.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/datum.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/datum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/datum.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/datum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/datum.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\datum.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/geoid.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/geoid.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/geoid.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/geoid.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/geoid.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/geoid.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/geoid.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/geoid.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/geoid.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/geoid.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/geoid.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/geoid.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\geoid.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/B2b.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/B2b.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/B2b.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/B2b.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/B2b.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/B2b.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/B2b.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/B2b.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/B2b.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/B2b.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/B2b.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/B2b.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\B2b.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/cal2jd.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/cal2jd.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/cal2jd.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/cal2jd.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/cal2jd.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/cal2jd.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/cal2jd.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/cal2jd.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/cal2jd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/cal2jd.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/cal2jd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/cal2jd.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\cal2jd.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dat.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dat.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dat.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dat.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dat.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dat.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dat.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dat.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dat.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dat.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dat.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dehanttideinel.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dehanttideinel.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dehanttideinel.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dehanttideinel.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dehanttideinel.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dehanttideinel.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dehanttideinel.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dehanttideinel.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dehanttideinel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dehanttideinel.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dehanttideinel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/dehanttideinel.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\dehanttideinel.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gmf.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gmf.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gmf.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gmf.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gmf.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gmf.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gmf.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gmf.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gmf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gmf.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gmf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gmf.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gmf.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gpt.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gpt.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gpt.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gpt.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gpt.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gpt.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gpt.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gpt.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gpt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gpt.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gpt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/gpt.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\gpt.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/norm8.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/norm8.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/norm8.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/norm8.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/norm8.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/norm8.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/norm8.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/norm8.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/norm8.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/norm8.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/norm8.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/norm8.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\norm8.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/sprod.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/sprod.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/sprod.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/sprod.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/sprod.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/sprod.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/sprod.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/sprod.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/sprod.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/sprod.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/sprod.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/sprod.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\sprod.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1idiu.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1idiu.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1idiu.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1idiu.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1idiu.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1idiu.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1idiu.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1idiu.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1idiu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1idiu.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1idiu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1idiu.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1idiu.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1isem.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1isem.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1isem.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1isem.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1isem.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1isem.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1isem.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1isem.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1isem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1isem.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1isem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1isem.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1isem.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1l1.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1l1.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1l1.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1l1.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1l1.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1l1.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1l1.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1l1.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1l1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1l1.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1l1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/st1l1.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\st1l1.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2diu.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2diu.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2diu.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2diu.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2diu.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2diu.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2diu.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2diu.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2diu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2diu.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2diu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2diu.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2diu.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2lon.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2lon.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2lon.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2lon.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2lon.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2lon.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2lon.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2lon.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2lon.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2lon.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2lon.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/step2lon.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\step2lon.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1_ht.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1_ht.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1_ht.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1_ht.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1_ht.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1_ht.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1_ht.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1_ht.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1_ht.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1_ht.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1_ht.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/vmf1_ht.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\vmf1_ht.c.s
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/zero_vec8.c.obj: CMakeFiles/rtklib_min.dir/flags.make
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/zero_vec8.c.obj: CMakeFiles/rtklib_min.dir/includes_C.rsp
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/zero_vec8.c.obj: E:/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/zero_vec8.c
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/zero_vec8.c.obj: CMakeFiles/rtklib_min.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\RTKLIB_demo5_b34i\rtcm_vbs\rtcm_vbs_hp\build_mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/zero_vec8.c.obj"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/zero_vec8.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/zero_vec8.c.obj -MF CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c.obj.d -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c.obj -c E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/zero_vec8.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/zero_vec8.c.i"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c.i
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c > CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c.i
 
 CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/zero_vec8.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rtklib_min.dir/E_/RTKLIB_demo5_b34i/rtcm_vbs/src/f2c/zero_vec8.c.s"
-	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c.s
+	C:\Users\lenovo\AppData\Local\Microsoft\WinGet\Packages\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\llvm-mingw-20260407-ucrt-x86_64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c -o CMakeFiles\rtklib_min.dir\E_\RTKLIB_demo5_b34i\rtcm_vbs\src\f2c\zero_vec8.c.s
 
 # Object files for target rtklib_min
 rtklib_min_OBJECTS = \
