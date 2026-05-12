@@ -55,12 +55,14 @@ typedef struct {
 
     int    apply_trop;
     double humi;                         /* relative humidity 0..1 */
+    int    sat_ephopt;                   /* EPHOPT_BRDC or EPHOPT_SSR??? */
 
     /* Statistics */
     long   n_obs_in, n_obs_out;
     long   n_sat_corrected, n_sat_no_eph;
     long   n_frames_1005_6, n_frames_msm;
-    long   n_sat_netcorr;
+    long   n_sat_netcorr, n_sat_netcorr_seen;
+    long   n_sat_ssr_used, n_sat_ssr_fallback;
 } vbs_ctx_t;
 
 /* ---- lifecycle ---- */
@@ -78,6 +80,11 @@ int  vbs_update_base(vbs_ctx_t *ctx, int side, const sta_t *sta);
 /* Rewrite rtcm->sta.pos to the VBS coordinate so a subsequent
  * gen_rtcm3(1005/1006) encodes the virtual ARP. */
 void vbs_rewrite_station(vbs_ctx_t *ctx, rtcm_t *rtcm);
+
+/* Select satellite position source for subsequent VBS corrections.
+ * If an SSR option is selected, corrections fall back per-satellite to BRDC
+ * whenever orbit/clock SSR is unavailable or stale. */
+void vbs_set_ephopt(vbs_ctx_t *ctx, int sat_ephopt);
 
 /* Apply VBS correction to rtcm->obs in-place.
  *
