@@ -1,0 +1,36 @@
+# CMake build directories
+build/
+build_*/
+cmake-build-*/
+rtcm_vbs_hp/build/
+rtcm_vbs_hp/build_*/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+# Native build outputs
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.dylib
+*.so
+*.exe
+*.out
+*.pdb
+*.ilk
+*.d
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/.browse.VC.db*

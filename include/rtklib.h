@@ -581,8 +581,14 @@ extern "C" {
 
 #define B2B_CodeBiasModeNum 15
 
-#ifndef PACKED_
+#if defined(_MSC_VER)
+#define PACKED_
+#define RTKLIB_PACKED_PRAGMA_BEGIN __pragma(pack(push, 1))
+#define RTKLIB_PACKED_PRAGMA_END   __pragma(pack(pop))
+#elif !defined(PACKED_)
 #define PACKED_ __attribute__((__packed__))
+#define RTKLIB_PACKED_PRAGMA_BEGIN
+#define RTKLIB_PACKED_PRAGMA_END
 #endif
 
 /* type definitions ----------------------------------------------------------*/
@@ -993,6 +999,7 @@ typedef struct {
     uint32_t URAI;
 } OrbitCorrection;
 
+RTKLIB_PACKED_PRAGMA_BEGIN
 
 /*
 Liu@APM:
@@ -1244,6 +1251,7 @@ typedef struct PACKED_ {
     uint32_t Xxxx;  // CRC
 }PACKED_SINO_BD3EPHEM;
 
+RTKLIB_PACKED_PRAGMA_END
 
 typedef struct {        /* navigation data type */
     int n,nmax;         /* number of broadcast ephemeris */
