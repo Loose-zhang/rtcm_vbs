@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"E:/RTKLIB_demo5_b34i/rtcm_vbs/rtcm_vbs_hp/build_mingw/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

@@ -55,7 +55,7 @@ typedef struct {
 
     int    apply_trop;
     double humi;                         /* relative humidity 0..1 */
-    int    sat_ephopt;                   /* EPHOPT_BRDC or EPHOPT_SSR??? */
+    int    sat_ephopt;                   /* EPHOPT_BRDC / EPHOPT_SSRAPC / EPHOPT_SSRCOM */
 
     /* Statistics */
     long   n_obs_in, n_obs_out;
